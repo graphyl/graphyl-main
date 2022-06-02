@@ -1,23 +1,31 @@
-import Navbar from './Navbar'
-import Footer from './Footer'
-import Head from 'next/head'
+import { useState } from 'react'
+import useWindowSize from '../hooks/use-window-dimensions'
+
+// components
+import { Navbar, NavbarSm, Footer } from './'
 
 const Layout = ({ children }: React.PropsWithChildren<{}>) => {
+  const { width, height } = useWindowSize()
+
+  const [menuLink, setMenuLink] = useState<{ menu: string; active: boolean }>({
+    menu: 'home',
+    active: true,
+  })
   return (
     <>
-      <Head>
-        <title>Graphyl</title>
-        <meta name="description" content="Graphy | For dreamers by creators." />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <div className="mainLayoutDiv">
-        <Navbar />
-        <section style={{width:'100%'}}>
+      <header>
+        {width > 800 ? (
+          <Navbar menuLink={menuLink} setMenuLink={setMenuLink} />
+        ) : (
+          <NavbarSm menuLink={menuLink} setMenuLink={setMenuLink} />
+        )}
+      </header>
 
-         {children}
-        </section>
+      {children}
+
+      <footer>
         <Footer />
-      </div>
+      </footer>
     </>
   )
 }
