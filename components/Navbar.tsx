@@ -10,13 +10,13 @@ const Navbar = () => {
         title={<h1 className="text-red-500">Graphyl</h1>}
         extra={[
           <Button key={1} type="link">
-            Home
+            <Link href="/">Home</Link>
           </Button>,
-          <Button type="link" key={2}>
-            About
+          <Button key={2} type="link">
+            <Link href="/aboout">About</Link>
           </Button>,
           <Button key={3} type="link">
-            Contact
+            <Link href="/contact">Contact</Link>
           </Button>,
         ]}
       />
