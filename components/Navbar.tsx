@@ -1,4 +1,5 @@
 import { Button, PageHeader } from 'antd'
+import Link from 'next/link'
 import React from 'react'
 
 const Navbar = () => {
@@ -6,17 +7,17 @@ const Navbar = () => {
     <>
       <PageHeader
         backIcon={false}
-        title={<h1 className='text-red-500'>Graphyl</h1>}
+        title={<h1 className="text-red-500">Graphyl</h1>}
         extra={[
           <Button key={1} type="link">
-            Home
+            <Link href="/">Home</Link>
           </Button>,
           <Button key={2} type="link">
-            About
+            <Link href="/aboout">About</Link>
           </Button>,
           <Button key={3} type="link">
-            Contact
-          </Button>,
+            <Link href="/contact">Contact</Link>
+          </Button>
         ]}
       />
     </>
