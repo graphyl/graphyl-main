@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import CarouselComp from '../components/CarouselComp'
 
 const Home: NextPage = () => {
   return (
@@ -10,8 +11,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <article className="text-center">
-        <h1 className="text-4xl text-gray-600">Graphyl</h1>
-        <p>Lets start the work boiz!</p>
+        <CarouselComp/>
       </article>
     </>
   )

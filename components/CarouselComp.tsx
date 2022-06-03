@@ -9,7 +9,7 @@ const CarouselComp: React.FC = () => {
         </div>
         <div className={styles.divStyle2}>
           <h3 className={styles.h3Style1}>
-            ITS TIME TO GO DIGITAL
+            IT'S TIME TO GO DIGITAL
           </h3>
         </div>
       </Carousel>
