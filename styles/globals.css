@@ -10,6 +10,11 @@
   --gray: #424242;
   --white: #fff;
 }
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 body {
   font-family: 'Poppins', sans-serif !important;
@@ -73,3 +78,4 @@ a {
 .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
   background-color: transparent !important;
 }
+
