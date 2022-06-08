@@ -1,6 +1,4 @@
 import { GlobalOutlined } from '@ant-design/icons'
-import { Card, Avatar } from 'antd'
-import Meta from 'antd/lib/card/Meta'
 
 import styles from '../../styles/projectCard.module.css'
 import React from 'react'
