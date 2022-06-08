@@ -18,7 +18,7 @@ const ContactForm = () => {
     message: string
   }) => {
     setLoading(true)
-    
+
     handleSubmit(values)
       .then((res) => {
         if (res.response.status === 200) {
@@ -39,7 +39,7 @@ const ContactForm = () => {
   return (
     <>
       <div className={`${width > 1350 ? 'h-screen px-40' : 'h-max'}`}>
-        <div className="space-y-16">
+        <div className="py-16">
           <Row>
             <Col xs={24} className="text-center">
               <h1 className="text-biscuit text-5xl text-stroke-primary">
@@ -59,7 +59,7 @@ const ContactForm = () => {
                 layout="vertical"
                 onFinish={submitContactForm}
               >
-                <Row className="px-10" align="middle">
+                <Row className="px-10 py-4" align="middle">
                   <Col xs={24}>
                     <Form.Item
                       label={<span className="text-biscuit">Name</span>}
@@ -103,7 +103,11 @@ const ContactForm = () => {
                         },
                       ]}
                     >
-                      <TextArea placeholder="Your Message" rows={5} />
+                      <TextArea
+                        placeholder="Your Message"
+                        rows={5}
+                        className="resize-none"
+                      />
                     </Form.Item>
                   </Col>
                   <Col xs={24} className="text-right">

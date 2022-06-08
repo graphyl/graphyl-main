@@ -12,7 +12,9 @@ const Navbar: React.FC<NavbarProps> = ({ menuLink, setMenuLink }) => {
         title={
           <div className="cursor-pointer">
             <Link href="/">
-              <h1 className={`text-white text-2xl graphyl-text cursor-pointer mb-0`}>
+              <h1
+                className={`text-white text-2xl graphyl-text cursor-pointer mb-0`}
+              >
                 Graphyl
               </h1>
             </Link>
@@ -74,7 +76,7 @@ const Navbar: React.FC<NavbarProps> = ({ menuLink, setMenuLink }) => {
               checkMenuClicked('portfolio', setMenuLink)
             }}
           >
-            <Link href="/portfolio">Services</Link>
+            <Link href="/portfolio">Portfolio</Link>
           </Button>,
           <Button
             key="5"
