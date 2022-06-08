@@ -13,19 +13,19 @@ const Layout = ({ children }: React.PropsWithChildren<{}>) => {
   })
   return (
     <>
-      <header>
-        {width > 800 ? (
-          <Navbar menuLink={menuLink} setMenuLink={setMenuLink} />
-        ) : (
-          <NavbarSm menuLink={menuLink} setMenuLink={setMenuLink} />
-        )}
-      </header>
-
-      {children}
-
-      <footer>
-        <Footer />
-      </footer>
+      <main className="main">
+        <header>
+          {width > 800 ? (
+            <Navbar menuLink={menuLink} setMenuLink={setMenuLink} />
+          ) : (
+            <NavbarSm menuLink={menuLink} setMenuLink={setMenuLink} />
+          )}
+        </header>
+        <div className="py-8">{children}</div>
+        <footer className="mt-auto">
+          <Footer />
+        </footer>
+      </main>
     </>
   )
 }

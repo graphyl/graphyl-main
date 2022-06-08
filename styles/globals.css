@@ -11,6 +11,11 @@
   --white: #fff;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Poppins', sans-serif !important;
   font-weight: 300 !important;
@@ -72,4 +77,10 @@ a {
 
 .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
   background-color: transparent !important;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
