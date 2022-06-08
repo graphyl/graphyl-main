@@ -2,13 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
 :root {
   --accent: #2bf0aa;
   --black: #1b1a17;
   --gray: #424242;
   --white: #fff;
+
+  --ff-body: 'Poppins', sans-serif;
+  --ff-heading: 'Roboto', sans-serif;
 }
 html,
 body {
@@ -22,7 +25,7 @@ body {
 }
 
 body {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: var(--ff-body);
   font-weight: 300 !important;
 }
 
@@ -32,7 +35,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Inter', serif !important;
+  font-family: var(--ff-heading);
   font-weight: 700 !important;
 }
 
@@ -88,4 +91,16 @@ a {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.main-card {
+  transition: 0.3s;
+  box-shadow: 0 0.1rem 0.3rem rgba(0 0 0 / 0.1);
+}
+
+@media screen and (min-width: 1280px) {
+  .main-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0 0 0 / 0.4);
+  }
 }
