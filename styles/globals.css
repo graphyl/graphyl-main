@@ -11,6 +11,11 @@
   --white: #fff;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Poppins', sans-serif !important;
   font-weight: 300 !important;
@@ -78,4 +83,10 @@ a {
   width: 150px;
   display: flex;
   justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

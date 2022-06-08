@@ -8,3 +8,4 @@ export { default as Services } from './services/Services'
 
 // utility comps
 export { default as NavigationBtn } from './button/NavigationBtn'
+export { default as ProjectCard } from './card/projectCard'
