@@ -20,7 +20,6 @@ const NavigationBtn: React.FC<NavigationBtnProps> = ({
   icon,
   btnText = '',
 }) => {
-  console.log(typeof tootlip === 'string')
   return (
     <>
       {typeof tootlip === 'string' ? (

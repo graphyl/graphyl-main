@@ -1,0 +1,23 @@
+.divStyle1{
+    width: 100vh;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-image: url('/carousel2.jpg');
+}
+.divStyle2 {
+    width: 100vh;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/carousel1.jpg');
+}
+.h3Style1 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+}
