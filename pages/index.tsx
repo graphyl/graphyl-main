@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       </Head>
       <article className="text-center">
         <CarouselComp />
-        <div className="container">
+        <div className="px-8 lg:px-16 xl:px-24">
           <h2 className="text-3xl mt-5">Services</h2>
           <Services />
         </div>
