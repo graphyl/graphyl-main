@@ -14,12 +14,12 @@ const ProjectCard: React.FC<Project> = (props: Project) => {
       </div>
       <div className={styles.card__data}>
         <div className="w-full flex align-center justify-between px-2 xl:flex-col xl:justify-center xl:text-center xl:text-4xl">
-          <h3 className="card__title text-black text-sm mb-0 sm:text-lg lg:text-2xl xl:text-2xl xl:text-accent xl:bg-black xl:w-max xl:mx-auto xl:px-2">
+          <h3 className="card__title text-black text-sm mb-0 sm:text-lg lg:text-2xl xl:text-2xl xl:text-white xl:bg-black xl:w-max xl:mx-auto xl:px-2">
             {props.name}
           </h3>
           <a
             href={props?.liveUrl}
-            className="card__link flex align-center text-xl lg:text-2xl xl:text-3xl xl:!text-accent xl:mt-2 xl:mx-auto"
+            className="card__link flex align-center text-xl lg:text-2xl xl:text-3xl xl:!text-white xl:mt-2 xl:mx-auto"
             target="_blank"
           >
             <GlobalOutlined />
