@@ -73,8 +73,8 @@ const Portfolio: NextPage = () => {
         justify="center"
       >
         {Projects.map((project) => (
-          <Col xs={24} sm={12} md={8} xxl={6} className="flex justify-center">
-            <div>
+          <Col xs={24} md={12} xl={8} className="flex justify-center">
+            <div className="h-80 rounded-xl overflow-hidden cursor-pointer relative main-card">
               <ProjectCard {...project} />
             </div>
           </Col>
