@@ -39,17 +39,6 @@ const ContactForm = () => {
   return (
     <>
       <div className="space-y-16">
-        <Row>
-          <Col xs={24} className="text-center">
-            <h1 className="text-biscuit text-5xl text-stroke-primary">
-              Contact Graphyl
-            </h1>
-            <p className="text-center">
-              Reach out to our team of expert, we would be very happy to guide
-              you.
-            </p>
-          </Col>
-        </Row>
         <Row gutter={32} align="middle" justify="center">
           <Col xs={24} md={12} className="w-max">
             <Form
