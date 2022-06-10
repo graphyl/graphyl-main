@@ -55,7 +55,7 @@ const Portfolio: NextPage = () => {
 
   return (
     <>
-      <Row>
+      <Row className="mb-10">
         <Col xs={24} className="text-center">
           <h1 className="text-biscuit text-5xl text-stroke-primary mb-4">
             Portfolio
@@ -67,14 +67,14 @@ const Portfolio: NextPage = () => {
       </Row>
 
       <Row
-        className="px-8 lg:px-16"
+        className="px-8 lg:px-16 mb-10"
         gutter={[32, 32]}
         align="middle"
         justify="center"
       >
         {Projects.map((project) => (
-          <Col xs={24} sm={12} md={8} xxl={6} className="flex justify-center">
-            <div>
+          <Col xs={24} md={12} xl={8} className="flex justify-center">
+            <div className="h-80 w-full rounded-xl overflow-hidden cursor-pointer relative main-card">
               <ProjectCard {...project} />
             </div>
           </Col>

@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Services, CarouselComp } from '../components'
+import { About } from '../components'
 
 const Home: NextPage = () => {
   return (
@@ -12,7 +13,8 @@ const Home: NextPage = () => {
       </Head>
       <article className="text-center">
         <CarouselComp />
-        <div className="px-8 lg:px-16 xl:px-24">
+        <div className="space-y-16 px-8 lg:px-16 xl:px-24">
+          <About />
           <h2 className="text-3xl mt-5">Services</h2>
           <Services />
         </div>
