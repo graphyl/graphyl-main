@@ -3,7 +3,7 @@ import { Carousel, Image } from 'antd'
 import styles from '../styles/CarouselComp.module.css'
 const CarouselComp: React.FC = () => {
   return (
-    <Carousel dots={false} className="!-mt-8" autoplay>
+    <Carousel dots={true} autoplay>
       <div className={styles.divStyle1}>
         <h3 className={styles.h3Style1}>WELCOME TO GRAPHYL</h3>
       </div>

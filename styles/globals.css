@@ -26,7 +26,8 @@ body {
 
 body {
   font-family: var(--ff-body);
-  font-weight: 300 !important;
+  font-weight: 300;
+  font-size: 1rem;
 }
 
 h1,
@@ -36,61 +37,82 @@ h4,
 h5,
 h6 {
   font-family: var(--ff-heading);
-  font-weight: 700 !important;
+  font-weight: 700;
 }
 
 a {
-  color: inherit !important;
+  color: inherit;
 }
 
 .graphyl-text {
-  font-family: 'Playfair Display', serif !important;
-  font-weight: 700 !important;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
   font-style: italic;
 }
 
 .ant-page-header {
-  background-color: var(--black) !important;
+  background-color: var(--black);
 }
 
 .ant-btn-link.active {
-  color: var(--accent) !important;
+  color: var(--accent);
 }
 
 /* .ant-typography-expand,
 .ant-typography-edit,
 .ant-typography-copy {
-  color: var(--white) !important;
+  color: var(--white);
 } */
 
 .ant-btn-primary {
-  border-color: var(--black) !important;
-  background-color: var(--black) !important;
+  border-color: var(--black);
+  background-color: var(--black);
 }
 .ant-btn-primary:hover {
-  border-color: var(--gray) !important;
-  background-color: var(--gray) !important;
+  border-color: var(--gray);
+  background-color: var(--gray);
 }
 
 .ant-drawer-body,
 .ant-menu {
-  background: var(--black) !important;
+  background: var(--black);
 }
 
 .ant-menu-inline,
 .ant-menu-vertical,
 .ant-menu-vertical-left {
-  border-right: 1px solid var(--accent) !important;
+  border-right: 1px solid var(--accent);
 }
 
 .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
-  background-color: transparent !important;
+  background-color: transparent;
+}
+
+.ant-card-cover img {
+  width: 150px;
+  display: flex;
+  justify-content: center;
 }
 
 .main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--white);
+  background-color: var(--black);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.ant-tabs-tab .ant-tabs-tab-btn:hover {
+  color: var(--accent);
+}
+
+.ant-tabs-top > .ant-tabs-nav::before {
+  border-bottom: none;
 }
 
 .main-card {

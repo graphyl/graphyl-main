@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import notFoundImage from '../components/assets/404.png'
+import notFoundImage from '../components/assets/images/404.png'
 import useWindowSize from '../hooks/use-window-dimensions'
 
 const Notfound = () => {

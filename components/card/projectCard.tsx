@@ -1,4 +1,4 @@
-import { GlobalOutlined } from '@ant-design/icons'
+import { EyeFilled } from '@ant-design/icons'
 
 import styles from '../../styles/projectCard.module.css'
 import React from 'react'
@@ -20,7 +20,7 @@ const ProjectCard: React.FC<Project> = (props: Project) => {
             className="card__link flex align-center text-xl lg:text-2xl xl:text-3xl xl:!text-white xl:mt-2 xl:mx-auto"
             target="_blank"
           >
-            <GlobalOutlined />
+            <EyeFilled />
           </a>
         </div>
       </div>
