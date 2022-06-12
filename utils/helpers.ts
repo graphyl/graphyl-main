@@ -35,3 +35,18 @@ export const checkMenuClicked = (menuName: string, setMenuLink: any) => {
       break
   }
 }
+
+export const truncate = (
+  string: string,
+  length: number = 100,
+  replaceText: string = '...'
+): string => {
+  let truncatedString = '';
+
+  if (string.length <= 30) {
+      return string;
+  } else {
+      truncatedString = `${string.substring(0, length)}${replaceText}`;
+      return truncatedString;
+  }
+};

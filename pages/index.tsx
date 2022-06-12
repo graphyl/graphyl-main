@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Services, CarouselComp } from '../components'
-import { About } from '../components'
+import { Services, CarouselComp, About } from '../components'
 
 const Home: NextPage = () => {
   return (
@@ -11,11 +10,10 @@ const Home: NextPage = () => {
         <meta name="description" content="Graphy | For dreamers by creators." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <article className="text-center">
+      <article className="text-center !-mt-8">
         <CarouselComp />
-        <div className="space-y-16 px-8 lg:px-16 xl:px-24">
+        <div className="container mx-auto px-6 lg:px-0">
           <About />
-          <h2 className="text-3xl mt-5">Services</h2>
           <Services />
         </div>
       </article>

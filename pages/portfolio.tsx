@@ -54,7 +54,7 @@ const Portfolio: NextPage = () => {
   ]
 
   return (
-    <>
+    <div className="container mx-auto px-6 lg:px-0">
       <Row className="mb-10">
         <Col xs={24} className="text-center">
           <h1 className="text-biscuit text-5xl text-stroke-primary mb-4">
@@ -80,7 +80,7 @@ const Portfolio: NextPage = () => {
           </Col>
         ))}
       </Row>
-    </>
+    </div>
   )
 }
 

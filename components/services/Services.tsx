@@ -6,10 +6,10 @@ const Services = () => {
   const { Meta } = Card
 
   return (
-    <>
+    <div className="mt-16">
       <Row gutter={[32, 32]} justify="center">
         {serviceCardData.map((data) => (
-          <Col xs={24} md={8} lg={6}>
+          <Col xs={24} md={12} lg={8}>
             <Card
               hoverable
               cover={
@@ -26,7 +26,7 @@ const Services = () => {
           </Col>
         ))}
       </Row>
-    </>
+    </div>
   )
 }
 
