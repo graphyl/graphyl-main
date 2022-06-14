@@ -126,3 +126,27 @@ a {
     box-shadow: 0 0.5rem 1rem rgba(0 0 0 / 0.4);
   }
 }
+
+.title-effect::after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 3px;
+  border-radius: 100vw;
+  bottom: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--accent);
+}
+
+.ant-collapse-header {
+  color: var(--black) !important;
+}
+
+.ant-collapse-item-active {
+  background-color: var(--black) !important;
+}
+
+.ant-collapse-item-active .ant-collapse-header {
+  color: var(--white) !important;
+}

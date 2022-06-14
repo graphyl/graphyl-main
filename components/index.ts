@@ -6,6 +6,7 @@ export { default as About } from './about/About'
 export { default as Footer } from './Footer'
 export { default as ContactForm } from './contactForm/ContactForm'
 export { default as Services } from './services/Services'
+export { default as Accordion } from './faqAccordion'
 
 // utility comps
 export { default as NavigationBtn } from './button/NavigationBtn'
