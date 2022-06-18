@@ -7,7 +7,7 @@ import { ContactForm } from '../components'
 const { TabPane } = Tabs
 const Contact: NextPage = () => {
   return (
-    <>
+    <div className="my-10">
       <Head>
         <title>Graphyl | Contact</title>
         <meta name="description" content="Graphy | For dreamers by creators." />
@@ -45,7 +45,7 @@ const Contact: NextPage = () => {
           ></Script>
         </TabPane>
       </Tabs>
-    </>
+    </div>
   )
 }
 

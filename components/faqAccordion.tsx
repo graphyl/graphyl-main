@@ -7,7 +7,7 @@ const faqAccordion: React.FC = () => {
   const { width, height } = useWindowSize()
   const { Panel } = Collapse
   return (
-    <div className="w-full">
+    <div className="w-full mb-10">
       <div className="text-center mb-5">
         <h2 className="inline-block	text-biscuit text-3xl text-stroke-primary mb-4 relative title-effect">
           FAQ

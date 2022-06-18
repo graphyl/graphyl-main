@@ -6,7 +6,7 @@ import { Projects } from '../utils/data'
 
 const Portfolio: NextPage = () => {
   return (
-    <div className="container mx-auto px-4 xl:px-40">
+    <div className="container mx-auto px-4 xl:px-40 mt-10">
       <Row className="mb-10">
         <Col xs={24} className="text-center">
           <h1 className="inline-block text-biscuit text-5xl text-stroke-primary mb-4 relative title-effect">
