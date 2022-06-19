@@ -1,3 +1,21 @@
+export const aboutInfo = [
+{
+  title:'Culture',
+  desc: 'Graphyl strives to create a culture that empowers a humble, creative, and independent workforce. We are passionate about our customers and believe that collaboration and creativity are powerful tools to help them make their dreams a reality. We believe that what makes us different makes us stronger. Building a more diverse, inclusive, and equitable organization is good for our teams, our customers, and our community. We empower each other to bring unique perspectives and experiences to work, and we continually seek new ways to do so.',
+},
+{
+  title:'Work flow ',
+  desc:'We combine sharp design with rich technology to craft exciting brands. Strong Follower of Agile Methodology to Ship Software Apps.'
+},
+{
+  title: 'About us',
+  desc: 'Graphyl is a Team of Under-rated but Enthusiastic developers aiming to provide optimal solutions to their clients.We work together to design, create and produce work that we are proud of for folks that we believe in. Graphylis an all-in-one IT Solutions Platform for small business. We empower small Scale Businesses and Startups around the 	world to start and grow their businesses with our smart development technologies, scalable Support, and inspiring content.',
+},
+{
+  title: 'History',
+  desc: 'About 6 months back in Jan 2022, The trio Ubed Shaikh, Saad Shaikh and Laique Mirza laid the foundation of Graphyl. After working for around 5 years and holding prominent positions in IT industry the feeling of being Under-Valued bowed the seeds for launching or own firm with the root motive to provide Affordable, Well Structured Solutions to Businesses and startups powered by Industry Leading technologies avoiding Legacy Havocs and Mugups.',
+}
+]
 export const serviceCardData = [
   {
     icon: 'https://res.cloudinary.com/graphyl/image/upload/v1654417835/graphyl-website-assets/services/web-dev_gnmcyu.png',
