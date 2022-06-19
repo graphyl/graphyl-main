@@ -23,8 +23,8 @@ const Notfound = () => {
             <Image src={notFoundImage} width={400} height={450} />
           </Col>
           <Col xs={24} md={12}>
-            <div className="h-[100%] flex items-center">
-              <span>
+            <div className="h-[100%] flex items-center space-y">
+              <span className='space-y-6'>
                 <h1 className={width > 1200 ? 'text-4xl' : 'text-2xl'}>
                   Looks like you are lost!
                 </h1>

@@ -9,11 +9,11 @@ const Home: NextPage = () => {
       <Head>
         <title>Graphyl | Home</title>
         <meta name="description" content="Graphy | For dreamers by creators." />
-        <link rel="icon" href="/favicon.ico" /> 
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <CarouselComp />
-      <article >
-        <div className="container mx-auto px-6 lg:px-0">
+      <article>
+        <div className="container mx-auto">
           {/* <About /> */}
           <Services />
           <HowWeWork />

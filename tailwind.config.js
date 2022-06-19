@@ -9,7 +9,7 @@ module.exports = {
       accent: '#2BF0AA',
       black: '#1b1a17',
       white: '#fff',
-      gray: '#424242',
+      gray: '#747474',
     },
   },
   plugins: [],
