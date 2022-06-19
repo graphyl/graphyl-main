@@ -3,5 +3,12 @@
 }
 
 .divStyle2 {
-    background-image: url('/carousel1.jpg');
+  background-image: url('/carousel1.jpg');
+}
+
+@media screen and (max-width: 800px) {
+  .divStyle1,
+  .divStyle2 {
+    background-position: 50% 50%;
+  }
 }

@@ -5,8 +5,12 @@ import styles from '../../styles/CarouselComp.module.css'
 const CarouselComp: React.FC = () => {
   const { width, height } = useWindowSize()
   return (
-    <Carousel dots={true} autoplay className='-mt-12'>
-      <div className={`${styles.divStyle1} bg-no-repeat bg-cover `}>
+    <Carousel dots={true} autoplay>
+      <div
+        className={`${styles.divStyle1} ${
+          width > 800 ? 'py-72' : 'py-48'
+        } w-full h-full bg-no-repeat bg-cover `}
+      >
         <h3
           className={` ${
             width > 800 ? 'text-3xl' : 'text-1xl'
@@ -15,7 +19,11 @@ const CarouselComp: React.FC = () => {
           WELCOME TO GRAPHYL
         </h3>
       </div>
-      <div className={`${styles.divStyle2} bg-no-repeat bg-cover`}>
+      <div
+        className={`${styles.divStyle2} ${
+          width > 800 ? 'py-72' : 'py-48'
+        } w-full h-full bg-no-repeat bg-cover`}
+      >
         <h3
           className={` ${
             width > 800 ? 'text-3xl' : 'text-1xl'
