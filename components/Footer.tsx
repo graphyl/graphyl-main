@@ -14,9 +14,12 @@ const Footer = () => {
   return (
     <>
       <div className="px-14 bg-black text-white py-20">
-        <Row className={width > 1200 ? 'space-x-20' : 'space-x-0 space-y-14'}>
-          <Col xs={24} lg={7}>
-            <div>
+        <Row
+          justify="end"
+          className={width > 1200 ? 'space-x-20' : 'space-x-0 space-y-14'}
+        >
+          <Col xs={24} lg={6}>
+            <div className="space-y-6">
               <h1 className="text-3xl graphyl-text text-white">Graphyl</h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
@@ -26,8 +29,8 @@ const Footer = () => {
               </p>
             </div>
           </Col>
-          <Col xs={24} md={12} lg={7}>
-            <div>
+          <Col xs={24} lg={6}>
+            <div className="space-y-4">
               <h1 className="text-white text-xl">Contact</h1>
               <p className="mb-0">Mumbai, India</p>
               <small>
@@ -56,7 +59,7 @@ const Footer = () => {
               </div>
             </div>
           </Col>
-          <Col xs={24} md={12} lg={7}>
+          <Col xs={24} lg={6}>
             <div>
               <h1 className="text-white text-xl">Links</h1>
               <ul className="list-none space-y-1">

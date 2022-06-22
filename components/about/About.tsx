@@ -2,10 +2,6 @@ import React from 'react'
 import { Card, Col, Row, Tooltip, Image } from 'antd'
 import { GlobalOutlined, LinkedinOutlined, LinkOutlined } from '@ant-design/icons'
 import useWindowSize from '../../hooks/use-window-dimensions'
-
-import Link from 'next/link'
-import HowWeWork from './HowWeWork'
-
 import laiqueImage from '../assets/images/laique-img.jpg'
 
 const { Meta } = Card
@@ -140,7 +136,6 @@ const About: React.FC = () => {
           </Row>
         </div>
       </div>
-      <HowWeWork />
     </div>
   )
 }

@@ -18,7 +18,7 @@ function HowWeWork() {
         className="w-[70%] mx-auto"
       />
       <p className="mt-2 mx-auto w-[80%] text-center">
-        <span className='font-bold'>Work flow </span>: {aboutInfo[1].desc}
+        <div className="font-bold text-xl">Work flow </div> {aboutInfo[1].desc}
       </p>
     </div>
   )
