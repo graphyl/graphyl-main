@@ -2,7 +2,7 @@ import { EyeFilled } from '@ant-design/icons'
 
 import styles from '../../styles/projectCard.module.css'
 import React from 'react'
-import { Project } from '../../pages/portfolio'
+import { Project } from '../../utils/data'
 
 const ProjectCard: React.FC<Project> = (props: Project) => {
   return (

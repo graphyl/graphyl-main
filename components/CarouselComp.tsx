@@ -8,7 +8,7 @@ const CarouselComp: React.FC = () => {
     <Carousel dots={true} autoplay>
       <div
         className={`${styles.divStyle1} ${
-          width > 800 ? 'py-72' : 'py-48'
+          width > 800 ? 'desktop-carousel' : 'py-48'
         } w-full h-full bg-no-repeat bg-cover `}
       >
         <h3
@@ -21,7 +21,7 @@ const CarouselComp: React.FC = () => {
       </div>
       <div
         className={`${styles.divStyle2} ${
-          width > 800 ? 'py-72' : 'py-48'
+          width > 800 ? 'desktop-carousel' : 'py-48'
         } w-full h-full bg-no-repeat bg-cover`}
       >
         <h3

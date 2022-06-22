@@ -150,3 +150,7 @@ a {
 .ant-collapse-item-active .ant-collapse-header {
   color: var(--white) !important;
 }
+
+.desktop-carousel {
+  height: calc(100vh - 72px);
+}
