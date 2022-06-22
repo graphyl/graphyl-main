@@ -8,26 +8,22 @@ const CarouselComp: React.FC = () => {
     <Carousel dots={true} autoplay>
       <div
         className={`${styles.divStyle1} ${
-          width > 800 ? 'desktop-carousel' : 'py-48'
-        } w-full h-full bg-no-repeat bg-cover `}
+          width > 1280 ? 'desktop-carousel' : 'py-60'
+        } w-full h-full bg-no-repeat bg-cover !flex justify-center items-center`}
       >
         <h3
-          className={` ${
-            width > 800 ? 'text-3xl' : 'text-1xl'
-          } h-[80vh] w-screen flex justify-center items-center text-white `}
+          className={` ${width > 800 ? 'text-3xl' : 'text-1xl'}  text-white `}
         >
           WELCOME TO GRAPHYL
         </h3>
       </div>
       <div
         className={`${styles.divStyle2} ${
-          width > 800 ? 'desktop-carousel' : 'py-48'
-        } w-full h-full bg-no-repeat bg-cover`}
+          width > 1280 ? 'desktop-carousel' : 'py-60'
+        } w-full h-full bg-no-repeat bg-cover !flex justify-center items-center`}
       >
         <h3
-          className={` ${
-            width > 800 ? 'text-3xl' : 'text-1xl'
-          } h-[80vh] w-screen flex justify-center items-center text-white `}
+          className={` ${width > 800 ? 'text-3xl' : 'text-1xl'}  text-white `}
         >
           IT'S TIME TO GO DIGITAL
         </h3>

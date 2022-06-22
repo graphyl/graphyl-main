@@ -4,8 +4,8 @@ import Image from 'next/image'
 import { GlobalOutlined } from '@ant-design/icons'
 import useWindowSize from '../../hooks/use-window-dimensions'
 
-
 import laiqueImage from '../assets/images/laique-img.jpg'
+import UbedImage from '../assets/images/Ubed-img.png'
 
 const { Meta } = Card
 
@@ -104,10 +104,10 @@ const About: React.FC = () => {
                 }
                 cover={
                   <Image
-                    src={laiqueImage}
+                    src={UbedImage}
                     width={150}
                     height={150}
-                    className="!rounded-full"
+                    className="!rounded-full gradient"
                   />
                 }
                 className="mt-4 about-card"

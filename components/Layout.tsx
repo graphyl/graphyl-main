@@ -21,7 +21,7 @@ const Layout = ({ children }: React.PropsWithChildren<{}>) => {
             <NavbarSm menuLink={menuLink} setMenuLink={setMenuLink} />
           )}
         </header>
-        <div className='my-12'>{children}</div>
+        <div className="mb-12">{children}</div>
         <footer className="mt-auto">
           <Footer />
         </footer>

@@ -95,7 +95,7 @@ export const Projects: Project[] = [
     name: 'clipz',
     imgUrl:
       'https://res.cloudinary.com/graphyl/image/upload/v1655643800/graphyl-website-assets/projects/clips_laniuk.png',
-    liveUrl: 'https://ubed90.github.io/Project-tracking-intro-component/',
+    liveUrl: 'https://clipz-five.vercel.app/',
     techStack: ['Angular', 'SCSS', 'FireBase'],
   },
 ]

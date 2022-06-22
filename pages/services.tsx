@@ -21,7 +21,7 @@ const services = () => {
   ]
 
   return (
-    <div className="px-8 lg:px-32 space-y-20">
+    <div className="px-8 lg:px-32 space-y-20 my-10">
       <Row justify="center">
         <Col xs={24} md={12} className="text-center space-y-6">
           <h1 className="text-gray text-2xl lg:text-4xl">Our Services</h1>
