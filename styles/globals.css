@@ -7,7 +7,7 @@
 :root {
   --accent: #2bf0aa;
   --black: #1b1a17;
-  --gray: #424242;
+  --gray: #747474;
   --white: #fff;
 
   --ff-body: 'Poppins', sans-serif;
@@ -24,9 +24,11 @@ body {
   overflow-x: hidden;
 }
 
-body {
+body,
+p,
+small {
   font-family: var(--ff-body);
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1rem;
 }
 
@@ -120,31 +122,25 @@ a {
   box-shadow: 0 0.1rem 0.3rem rgba(0 0 0 / 0.1);
 }
 
-@media screen and (min-width: 1280px) {
-  .main-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0.5rem 1rem rgba(0 0 0 / 0.4);
-  }
-}
-
 .title-effect::after {
   content: '';
   position: absolute;
-  width: 60%;
+  width: 40%;
   height: 3px;
   border-radius: 100vw;
   bottom: -5%;
   left: 50%;
+  top: 110%;
   transform: translateX(-50%);
   background-color: var(--accent);
 }
 
 .ant-collapse-header {
-  color: var(--black) !important;
+  color: var(--black);
 }
 
 .ant-collapse-item-active {
-  background-color: var(--black) !important;
+  background-color: var(--black);
 }
 
 .ant-collapse-item-active .ant-collapse-header {
@@ -153,4 +149,43 @@ a {
 
 .desktop-carousel {
   height: calc(100vh - 72px);
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.title:after {
+  bottom: 0;
+  content: attr(title);
+  font-size: 2.8rem;
+  font-weight: 700;
+  left: 0;
+  opacity: 0.1;
+  position: absolute;
+}
+
+.title,
+.title:after {
+  color: var(--gray);
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 1280px) {
+  .main-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0 0 0 / 0.4);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .title:after {
+    font-size: 2rem;
+  }
 }
