@@ -1,6 +1,6 @@
 import { Col, Row } from 'antd'
 import React from 'react'
-import { ServicesDetails } from '../components'
+import { ServicesDetails, TechStack } from '../components'
 import { servicesData } from '../utils/data'
 
 import webDevImg from '../components/assets/images/web-dev.svg'
@@ -21,7 +21,7 @@ const services = () => {
   ]
 
   return (
-    <div className="px-8 lg:px-32">
+    <div className="px-8 lg:px-32 space-y-20">
       <Row justify="center">
         <Col xs={24} md={12} className="text-center space-y-6">
           <h1 className="text-gray text-2xl lg:text-4xl">Our Services</h1>
@@ -34,7 +34,7 @@ const services = () => {
         </Col>
       </Row>
 
-      <div className="space-y-40 mt-40">
+      <div className="space-y-40">
         {servicesData.map((service) => (
           <ServicesDetails
             title={service.title}
@@ -45,7 +45,12 @@ const services = () => {
         ))}
       </div>
 
-      
+      <div>
+        <h1 className="text-gray text-2xl lg:text-4xl text-center mb-8">
+          Technologies we use
+        </h1>
+        <TechStack />
+      </div>
     </div>
   )
 }

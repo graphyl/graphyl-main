@@ -51,7 +51,7 @@ const Contact: NextPage = () => {
           <Faq />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

@@ -343,7 +343,7 @@ export const tools = [
   },
   {
     title: 'Docker',
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
   },
   {
     title: 'Digital Ocean',
