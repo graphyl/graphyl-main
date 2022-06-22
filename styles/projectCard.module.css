@@ -9,15 +9,16 @@
 
 @media screen and (min-width: 1280px) {
   .card:hover .card__data {
-    top: 0;
-    left: 0;
+    transform: scaleX(1);
   }
   .card__data {
     position: absolute;
+    top: 0;
+    left: 0;
     align-items: unset;
-    background-color: rgba(0 0 0 / 0.4);
+    background-image: linear-gradient(to top , rgb(0 0 0 / .8) 30% , rgb(0 0 0 / .4) 80% , transparent);
     backdrop-filter: blur(0.3rem);
-    left: 100%;
+    transform: scaleX(0);
     transition: 0.3s;
   }
 }

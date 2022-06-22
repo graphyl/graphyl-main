@@ -4,8 +4,6 @@ import Image from 'next/image'
 import { GlobalOutlined } from '@ant-design/icons'
 import useWindowSize from '../../hooks/use-window-dimensions'
 
-import Link from 'next/link'
-import HowWeWork from './HowWeWork'
 
 import laiqueImage from '../assets/images/laique-img.jpg'
 
@@ -20,18 +18,18 @@ const About: React.FC = () => {
         <h2
           className={`${
             width > 800 ? 'text-3xl' : 'text-1xl'
-          } inline-block text-3xl relative title-effect`}
+          } inline-block text-3xl relative title-effect text-gray`}
         >
           About
         </h2>
       </div>
-      <p className="mx-auto max-w-2xl my-5">
+      <p className="mx-auto max-w-2xl my-5 text-gray">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio impedit
         dolore perspiciatis reiciendis, dignissimos maxime tenetur quo ut a modi
         eum nisi necessitatibus neque?
       </p>
 
-      <div className="bg-black py-8">
+      <div>
         <div className="site-card-wrapper mt-4 mx-auto px-6 ">
           <Row gutter={[32, 32]} justify="center">
             <Col xs={24} md={8}>
@@ -54,7 +52,7 @@ const About: React.FC = () => {
                     className="!rounded-full"
                   />
                 }
-                className="mt-4"
+                className="mt-4 about-card"
               >
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
@@ -83,7 +81,7 @@ const About: React.FC = () => {
                     className="!rounded-full"
                   />
                 }
-                className="mt-4"
+                className="mt-4 about-card"
               >
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
@@ -112,7 +110,7 @@ const About: React.FC = () => {
                     className="!rounded-full"
                   />
                 }
-                className="mt-4"
+                className="mt-4 about-card"
               >
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
@@ -123,33 +121,6 @@ const About: React.FC = () => {
           </Row>
         </div>
       </div>
-      <HowWeWork />
-      {/*      <Row className="mt-12" justify="center" align="middle" gutter={[32, 32]}>
-        <Col md={24} lg={10}>
-          <Image
-            loader={() =>
-              'https://www.incimages.com/uploaded_files/image/1920x1080/getty_160945425_970647970450083_44809.jpg'
-            }
-            src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_160945425_970647970450083_44809.jpg"
-            alt="work"
-            width={350}
-            height={250}
-            className="rounded-2xl"
-          />
-        </Col>
-  <Col md={24} lg={10}>
-          <div className="text-center">
-            <h2 className="inline-block text-xl relative title-effect">
-              TECHNOLOGIES WE USE
-            </h2>
-          </div>
-          <p className="mt-2 mx-auto max-w-md">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolorum
-            repudiandae, officiis, totam exercitationem beatae tenetur omnis
-            quas adipisci recusandae sunt asperiores blanditiis maxime.
-          </p>
-        </Col>
-      </Row> */}
     </div>
   )
 }

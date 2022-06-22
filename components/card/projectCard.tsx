@@ -1,10 +1,11 @@
 import { EyeFilled } from '@ant-design/icons'
+import { Tag } from 'antd';
 
 import styles from '../../styles/projectCard.module.css'
 import React from 'react'
-import { Project } from '../../pages/portfolio'
+import { Project } from '../../interface/interface'
 
-const ProjectCard: React.FC<Project> = (props: Project) => {
+const ProjectCard: React.FC<Project> = (props) => {
   return (
     <div className={styles.card}>
       <div className="card__img absolute inset-0 bottom-14 xl:bottom-0">
@@ -12,7 +13,7 @@ const ProjectCard: React.FC<Project> = (props: Project) => {
       </div>
       <div className={`${styles.card__data} absolute inset-0`}>
         <div className="w-full h-full flex items-center justify-between px-2 xl:flex-col xl:justify-center xl:text-center xl:text-4xl">
-          <h3 className="card__title text-black text-sm mb-0 sm:text-lg xl:text-2xl xl:text-white xl:bg-black xl:w-max xl:mx-auto xl:px-2">
+          <h3 className="card__title text-black text-sm mb-0 sm:text-lg xl:text-xl xl:text-white xl:w-max xl:mx-auto xl:px-2 xl:font-light">
             {props.name}
           </h3>
           <a
@@ -22,6 +23,9 @@ const ProjectCard: React.FC<Project> = (props: Project) => {
           >
             <EyeFilled />
           </a>
+        </div>
+        <div className='card__tags absolute bottom-10 bg-accent'>
+          {props.techStack.map((stack) => (<Tag>{stack}</Tag>))}
         </div>
       </div>
     </div>
