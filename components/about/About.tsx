@@ -1,7 +1,6 @@
 import React from 'react'
-import { Card, Col, Row, Tooltip } from 'antd'
-import Image from 'next/image'
-import { GlobalOutlined } from '@ant-design/icons'
+import { Card, Col, Row, Tooltip, Image } from 'antd'
+import { GlobalOutlined, LinkedinOutlined, LinkOutlined } from '@ant-design/icons'
 import useWindowSize from '../../hooks/use-window-dimensions'
 
 import Link from 'next/link'
@@ -31,125 +30,117 @@ const About: React.FC = () => {
         eum nisi necessitatibus neque?
       </p>
 
-      <div className="bg-black py-8">
-        <div className="site-card-wrapper mt-4 mx-auto px-6 ">
-          <Row gutter={[32, 32]} justify="center">
+      <div className='py-8 !w-[100%] bg-black'>
+        <div
+          className={`${
+            width < 768 ? 'ml-[50%] -translate-x-[50%]' : ''
+          } mt-4 site-card-wrapper flex justify-center items-center mx-auto  `}
+        >
+          <Row gutter={[32, 32]} justify="center" align="middle">
             <Col xs={24} md={8}>
               <Card
                 hoverable
-                title="Laique Mirza"
-                headStyle={{ border: 0 }}
-                extra={
-                  <Tooltip key="view" title="Visit Website" placement="top">
+                cover={
+                  <Image
+                    src={laiqueImage.src}
+                    width={250}
+                    className="h-full !w-full"
+                    preview={false}
+                  />
+                }
+                actions={[
+                  <Tooltip key="view" title="Visit Linkedin" placement="bottom">
                     <a target="_blank" href="https://www.laique007.com/">
-                      <GlobalOutlined className="text-2xl" />
+                      <LinkedinOutlined className="text-xl" />
                     </a>
-                  </Tooltip>
-                }
-                cover={
-                  <Image
-                    src={laiqueImage}
-                    width={150}
-                    height={150}
-                    className="!rounded-full"
-                  />
-                }
+                  </Tooltip>,
+                  <Tooltip key="view" title="Visit Website" placement="bottom">
+                    <a target="_blank" href="https://www.laique007.com/">
+                      <LinkOutlined className="text-xl" />
+                    </a>
+                  </Tooltip>,
+                ]}
+                style={{ width: 250 }}
                 className="mt-4"
               >
-                <p>
+                <h2 className="text-xl">Laique Mirza</h2>
+                <p className="!text-sm !text-slate-500 !font-thin">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </Card>
+            </Col>
+            <Col xs={24} md={8}>
+              <Card
+                hoverable
+                cover={
+                  <Image
+                    src={laiqueImage.src}
+                    width={250}
+                    className="h-full !w-full"
+                    preview={false}
+                  />
+                }
+                actions={[
+                  <Tooltip key="view" title="Visit Linkedin" placement="bottom">
+                    <a target="_blank" href="https://www.laique007.com/">
+                      <LinkedinOutlined className="text-xl" />
+                    </a>
+                  </Tooltip>,
+                  <Tooltip key="view" title="Visit Website" placement="bottom">
+                    <a target="_blank" href="https://www.laique007.com/">
+                      <LinkOutlined className="text-xl" />
+                    </a>
+                  </Tooltip>,
+                ]}
+                style={{ width: 250 }}
+                className="mt-4"
+              >
+                <h2 className="text-xl">Laique Mirza</h2>
+                <p className="!text-sm !text-slate-500 !font-thin">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </Card>
+            </Col>
+            <Col xs={24} md={8}>
+              <Card
+                hoverable
+                cover={
+                  <Image
+                    src={laiqueImage.src}
+                    width={250}
+                    className="h-full !w-full"
+                    preview={false}
+                  />
+                }
+                actions={[
+                  <Tooltip key="view" title="Visit Linkedin" placement="bottom">
+                    <a target="_blank" href="https://www.laique007.com/">
+                      <LinkedinOutlined className="text-xl" />
+                    </a>
+                  </Tooltip>,
+                  <Tooltip key="view" title="Visit Website" placement="bottom">
+                    <a target="_blank" href="https://www.laique007.com/">
+                      <LinkOutlined className="text-xl" />
+                    </a>
+                  </Tooltip>,
+                ]}
+                style={{ width: 250 }}
+                className="mt-4"
+              >
+                <h2 className="text-xl">Laique Mirza</h2>
+                <p className="!text-sm !text-slate-500 !font-thin">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
                   ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
               </Card>
             </Col>
 
-            <Col xs={24} md={8}>
-              <Card
-                hoverable
-                title="Saad Shaikh"
-                headStyle={{ border: 0 }}
-                extra={
-                  <Tooltip key="view" title="Visit Website" placement="top">
-                    <a target="_blank" href="https://saadshaikh.netlify.app/">
-                      <GlobalOutlined className="text-2xl" />
-                    </a>
-                  </Tooltip>
-                }
-                cover={
-                  <Image
-                    src={laiqueImage}
-                    width={150}
-                    height={150}
-                    className="!rounded-full"
-                  />
-                }
-                className="mt-4"
-              >
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-                  ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-              </Card>
-            </Col>
-
-            <Col xs={24} md={8}>
-              <Card
-                hoverable
-                title="Ubed Shaikh"
-                headStyle={{ border: 0 }}
-                extra={
-                  <Tooltip key="view" title="Visit Website" placement="top">
-                    <a target="_blank" href="https://ubedshaikh.netlify.app/">
-                      <GlobalOutlined className="text-2xl" />
-                    </a>
-                  </Tooltip>
-                }
-                cover={
-                  <Image
-                    src={laiqueImage}
-                    width={150}
-                    height={150}
-                    className="!rounded-full"
-                  />
-                }
-                className="mt-4"
-              >
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-                  ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-              </Card>
-            </Col>
           </Row>
         </div>
       </div>
       <HowWeWork />
-      {/*      <Row className="mt-12" justify="center" align="middle" gutter={[32, 32]}>
-        <Col md={24} lg={10}>
-          <Image
-            loader={() =>
-              'https://www.incimages.com/uploaded_files/image/1920x1080/getty_160945425_970647970450083_44809.jpg'
-            }
-            src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_160945425_970647970450083_44809.jpg"
-            alt="work"
-            width={350}
-            height={250}
-            className="rounded-2xl"
-          />
-        </Col>
-  <Col md={24} lg={10}>
-          <div className="text-center">
-            <h2 className="inline-block text-xl relative title-effect">
-              TECHNOLOGIES WE USE
-            </h2>
-          </div>
-          <p className="mt-2 mx-auto max-w-md">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolorum
-            repudiandae, officiis, totam exercitationem beatae tenetur omnis
-            quas adipisci recusandae sunt asperiores blanditiis maxime.
-          </p>
-        </Col>
-      </Row> */}
     </div>
   )
 }
