@@ -24,7 +24,7 @@ const services = () => {
     <div className="px-8 lg:px-32 space-y-20 my-10">
       <Row justify="center">
         <Col xs={24} md={12} className="text-center space-y-6">
-          <h1 className="text-gray text-2xl lg:text-4xl">Our Services</h1>
+          <h1 className="inline-block relative title-effect">Our Services</h1>
           <p className="text-gray">
             Being a Tech Startup and having expertise and experience in almost
             all development and testing areas, We at Graphyl Provide Scalable
@@ -35,20 +35,18 @@ const services = () => {
       </Row>
 
       <div className="space-y-40">
-        {servicesData.map((service) => (
+        {servicesData.map((service , idx) => (
           <ServicesDetails
             title={service.title}
             desc={service.desc}
             approaches={service.approaches}
             image={images[service.image - 1]}
+            idx={idx}
           />
         ))}
       </div>
 
       <div>
-        <h1 className="text-gray text-2xl lg:text-4xl text-center mb-8">
-          Technologies we use
-        </h1>
         <TechStack />
       </div>
     </div>

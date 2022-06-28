@@ -6,7 +6,10 @@ const Services = () => {
   const { Meta } = Card
 
   return (
-    <div className="text-center mt-16 px-16">
+    <div className="text-center mt-16 px-16 space-y-10">
+      <h2 className="inline-block text-2xl relative title-effect">
+        Services
+      </h2>
       <Row gutter={[32, 32]} justify="center">
         {serviceCardData.map((data) => (
           <Col xs={24} md={12} lg={8}>
