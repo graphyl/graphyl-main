@@ -32,6 +32,16 @@ small {
   font-size: 1rem;
 }
 
+@media screen and (min-width: 769px) {
+  body , p {
+    font-size: 1.2rem;
+  }
+
+  .ant-card-meta-description > p{
+    font-size: 1rem;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -122,6 +132,11 @@ a {
   box-shadow: 0 0.1rem 0.3rem rgba(0 0 0 / 0.1);
 }
 
+.title-effect {
+  font-size: 2rem !important;
+  color: var(--gray);
+}
+
 .title-effect::after {
   content: '';
   position: absolute;
@@ -165,6 +180,12 @@ a {
   left: 0;
   opacity: 0.1;
   position: absolute;
+}
+
+.title-home::after {
+  font-size: 2rem;
+  top: -1rem;
+  left: 0.8rem;
 }
 
 .title,

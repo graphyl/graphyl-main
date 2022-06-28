@@ -10,4 +10,12 @@ export interface ServicesDetailsInterface {
   desc: string
   image: string
   approaches: string[]
+  idx: number
+}
+
+export interface TechstackProps {
+  isHome?: boolean
+}
+export interface ContactProps {
+  FaqRequired?: boolean
 }

@@ -5,7 +5,8 @@ import Script from 'next/script'
 import { ContactForm, Faq } from '../components'
 
 const { TabPane } = Tabs
-const Contact: NextPage = () => {
+// @ts-ignore
+const Contact: NextPage = ({ FaqRequired = true }) => {
   return (
     <div className="my-10">
       <Head>
@@ -47,9 +48,11 @@ const Contact: NextPage = () => {
           </TabPane>
         </Tabs>
 
-        <div className="mt-20">
-          <Faq />
-        </div>
+        {FaqRequired && (
+          <div className="mt-20">
+            <Faq />
+          </div>
+        )}
       </div>
     </div>
   )
