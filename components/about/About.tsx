@@ -1,8 +1,13 @@
 import React from 'react'
 import { Card, Col, Row, Tooltip, Image } from 'antd'
-import { GlobalOutlined, LinkedinOutlined, LinkOutlined } from '@ant-design/icons'
+import {
+  GlobalOutlined,
+  LinkedinOutlined,
+  LinkOutlined,
+} from '@ant-design/icons'
 import useWindowSize from '../../hooks/use-window-dimensions'
 import laiqueImage from '../assets/images/laique-img.jpg'
+import saadImage from '../assets/images/saad-img.jpg'
 
 const { Meta } = Card
 
@@ -26,7 +31,7 @@ const About: React.FC = () => {
         eum nisi necessitatibus neque?
       </p>
 
-      <div className='py-8 !w-[100%] bg-black'>
+      <div className="py-8 !w-[100%] bg-black">
         <div
           className={`${
             width < 768 ? 'ml-[50%] -translate-x-[50%]' : ''
@@ -101,10 +106,11 @@ const About: React.FC = () => {
             </Col>
             <Col xs={24} md={8}>
               <Card
+                bodyStyle={{ maxHeight: 300, maxWidth: 450 }}
                 hoverable
                 cover={
                   <Image
-                    src={laiqueImage.src}
+                    src={saadImage.src}
                     width={250}
                     className="h-full !w-full"
                     preview={false}
@@ -112,12 +118,15 @@ const About: React.FC = () => {
                 }
                 actions={[
                   <Tooltip key="view" title="Visit Linkedin" placement="bottom">
-                    <a target="_blank" href="https://www.laique007.com/">
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/saad-shaikh-278452193/"
+                    >
                       <LinkedinOutlined className="text-xl" />
                     </a>
                   </Tooltip>,
                   <Tooltip key="view" title="Visit Website" placement="bottom">
-                    <a target="_blank" href="https://www.laique007.com/">
+                    <a target="_blank" href="https://saadshaikh.netlify.app/">
                       <LinkOutlined className="text-xl" />
                     </a>
                   </Tooltip>,
@@ -125,14 +134,14 @@ const About: React.FC = () => {
                 style={{ width: 250 }}
                 className="mt-4"
               >
-                <h2 className="text-xl">Laique Mirza</h2>
+                <h2 className="text-xl">Saad Shaikh</h2>
                 <p className="!text-sm !text-slate-500 !font-thin">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-                  ipsum dolor sit amet consectetur adipisicing elit.
+                  Hello there, Im saad shaikh. A Fullstack Developer with three
+                  years of industrial experience. Wanna know more about me?
+                  Visit either of those links below.
                 </p>
               </Card>
             </Col>
-
           </Row>
         </div>
       </div>

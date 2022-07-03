@@ -33,11 +33,12 @@ small {
 }
 
 @media screen and (min-width: 769px) {
-  body , p {
+  body,
+  p {
     font-size: 1.2rem;
   }
 
-  .ant-card-meta-description > p{
+  .ant-card-meta-description > p {
     font-size: 1rem;
   }
 }
@@ -64,6 +65,7 @@ a {
 
 .ant-page-header {
   background-color: var(--black);
+  padding: 16px 100px;
 }
 
 .ant-btn-link.active {
