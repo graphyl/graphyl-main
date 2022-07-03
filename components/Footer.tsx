@@ -21,39 +21,35 @@ const Footer = () => {
           <Col xs={24} lg={6}>
             <div className="space-y-6">
               <h1 className="text-3xl graphyl-text text-white">Graphyl</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-                deleniti quasi, vero libero harum animi quibusdam enim fuga,
-                itaque architecto officia ratione. Exercitationem quaerat
-                mollitia ad provident distinctio, voluptate doloremque.
+              <p className='text-base'>
+                Graphyl strives to create a culture that empowers a humble,
+                creative, and independent workforce. We are passionate about our
+                customers and believe that collaboration and creativity are
+                powerful tools to help them make their dreams a reality.
               </p>
             </div>
           </Col>
           <Col xs={24} lg={6}>
             <div className="space-y-4">
               <h1 className="text-white text-xl">Contact</h1>
-              <p className="mb-0">Mumbai, India</p>
-              <small>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
-                expedita!
-              </small>
-              <div className="pt-3">
-                <p className="!text-white">
-                  <a href="mailto: graphylsolutions@gmail.com">
-                    graphylsolutions@gmail.com
-                  </a>{' '}
-                  | <a href="tel:9876543211">+91 9876543211</a>
+              <p className="mb-0 text-base">Mumbai, India</p>
+              <div>
+                <p className="!text-white text-base">
+                  <a href="mailto:info@graphyl.com">info@graphyl.com</a> |{' '}
+                  <a href="tel:9967005204">+91 9967005204</a>
                 </p>
               </div>
+
+              <h1 className="text-white text-xl pt-3">Connect with us</h1>
               <div className="space-x-4 mt-4">
                 <NavigationBtn
                   tootlip="LinkedIn"
-                  link="https://stackoverflow.com/"
+                  link="https://www.linkedin.com/company/86632763"
                   icon={<LinkedinOutlined className="!text-2xl !text-white" />}
                 />
                 <NavigationBtn
                   tootlip="Email"
-                  link="mailto:graphylsolutions@gmail.com"
+                  link="mailto:info@graphyl.com"
                   icon={<MailOutlined className="!text-2xl !text-white" />}
                 />
               </div>
@@ -63,23 +59,23 @@ const Footer = () => {
             <div>
               <h1 className="text-white text-xl">Links</h1>
               <ul className="list-none space-y-1">
-                <li className="flex items-center text-white hover:text-accent">
+                <li className="flex items-center text-white hover:text-accent text-base">
                   <CaretRightOutlined />
                   <Link href="/">Home</Link>
                 </li>
-                <li className="flex items-center text-white hover:text-accent">
+                <li className="flex items-center text-white hover:text-accent text-base">
                   <CaretRightOutlined />
                   <Link href="/about">About</Link>
                 </li>
-                <li className="flex items-center text-white hover:text-accent">
+                <li className="flex items-center text-white hover:text-accent text-base">
                   <CaretRightOutlined />
                   <Link href="/services">Services</Link>
                 </li>
-                <li className="flex items-center text-white hover:text-accent">
+                <li className="flex items-center text-white hover:text-accent text-base">
                   <CaretRightOutlined />
                   <Link href="/portfolio">Portfolio</Link>
                 </li>
-                <li className="flex items-center text-white hover:text-accent">
+                <li className="flex items-center text-white hover:text-accent text-base">
                   <CaretRightOutlined />
                   <Link href="/contact">Contact</Link>
                 </li>
@@ -89,7 +85,7 @@ const Footer = () => {
         </Row>
       </div>
       <div className="bg-[#000] py-4">
-        <p className="text-white text-center mb-0">
+        <p className="text-white text-center mb-0 text-base">
           ©️ {new Date().getFullYear()} - All Rights Reserved.
           <span className="graphyl-text"> Graphyl</span>
         </p>

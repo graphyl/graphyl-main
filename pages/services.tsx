@@ -29,13 +29,15 @@ const services = () => {
             Being a Tech Startup and having expertise and experience in almost
             all development and testing areas, We at Graphyl Provide Scalable
             and Robust solutions which can curb all your essential needs right
-            from root to making it big.
+            from root to making it big. Graphyl offers highly capable, efﬁcient,
+            and proven Development and Maintenance Services using your preferred
+            technologies and methodologies
           </p>
         </Col>
       </Row>
 
       <div className="space-y-40">
-        {servicesData.map((service , idx) => (
+        {servicesData.map((service, idx) => (
           <ServicesDetails
             title={service.title}
             desc={service.desc}
