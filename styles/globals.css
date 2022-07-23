@@ -205,7 +205,50 @@ header {
   color: var(--gray);
   white-space: nowrap;
 }
+.text-custom-color-h
+{
+  color: #ebebd3;
+}
+.text-custom-color-p {
+  color: #d1c6ad;
+}
+.carousel-button-animation {
+  padding: 7px 10px;
+  width: 210px;
 
+  border: 1px solid #d1c6ad;
+  text-transform: uppercase;
+  color: #1b1a17;
+  font-size: 1rem;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.2rem;
+  
+  transition: 0.3s;
+}
+
+.carousel-button-animation::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ebebd3;
+  z-index: -1;
+  transition: 0.3s;
+  border-radius: inherit;
+}
+
+.carousel-button-animation:hover {
+  border-color: #fcdebe;
+  color: #fffd82;
+}
+
+.carousel-button-animation:hover::after {
+  left: 100%;
+}
 /* Container */
 
 .mw-container {

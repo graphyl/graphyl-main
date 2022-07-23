@@ -1,34 +1,64 @@
 import React from 'react'
 import { Carousel, Image } from 'antd'
-import useWindowSize from '../../hooks/use-window-dimensions'
-import styles from '../../styles/CarouselComp.module.css'
+import carousel1 from '../assets/images/saly-10.png'
+import { ArrowRightOutlined, SendOutlined } from '@ant-design/icons'
 const CarouselComp: React.FC = () => {
-  const { width, height } = useWindowSize()
   return (
-    <Carousel dots={true} autoplay>
-      <div
-        className={`${styles.divStyle1} ${
-          width > 1280 ? 'desktop-carousel' : 'py-60'
-        } w-full h-full bg-no-repeat bg-cover !flex justify-center items-center`}
-      >
-        <h3
-          className={` ${width > 800 ? 'text-3xl' : 'text-1xl'}  text-white `}
+    <div className="flex justify-around bg-black items-center flex-column w-full h-screen">
+      <div className="w-1/2">
+        <Carousel
+        dotPosition='top'
+          dots={true}
+          autoplay
         >
-          WELCOME TO GRAPHYL
-        </h3>
+          <div className="py-8">
+            <h3 className="xs:text-xl md:text-3xl lg:text-5xl text-custom-color-h font-bold">
+              WELCOME TO GRAPHYL
+            </h3>
+            <p className="lg:text-sm text-custom-color-p py-4 w-3/4">
+              For dreamers by creators For dreamers by creators For dreamers by
+              For dreamers by creators For dreamers by creators creators
+            </p>
+            <button className="carousel-button-animation flex items-center gap-x-3">
+              BOOK YOUR SLOT <ArrowRightOutlined />
+            </button>
+          </div>
+          <div className="py-8">
+            <h3 className="xs:text-xl md:text-3xl lg:text-5xl text-custom-color-h font-bold">
+              GO DIGITAL
+            </h3>
+            <p className="lg:text-sm text-custom-color-p py-4 w-3/4">
+              For dreamers by creators For dreamers by creators For dreamers by
+              For dreamers by creators For dreamers by creators creators
+            </p>
+            <button className="carousel-button-animation flex items-center gap-x-3">
+              BOOK YOUR SLOT <ArrowRightOutlined />
+            </button>
+          </div>
+          <div className="py-8">
+            <h3 className="xs:text-xl md:text-3xl lg:text-5xl text-custom-color-h font-bold">
+              EXPAND YOUR BUSINESSS
+            </h3>
+            <p className="lg:text-sm text-custom-color-p py-4 w-3/4">
+              For dreamers by creators For dreamers by creators For dreamers by
+              For dreamers by creators For dreamers by creators creators
+            </p>
+            <button className="carousel-button-animation flex items-center gap-x-3">
+              BOOK YOUR SLOT <ArrowRightOutlined />
+            </button>
+          </div>
+         </Carousel>
       </div>
-      <div
-        className={`${styles.divStyle2} ${
-          width > 1280 ? 'desktop-carousel' : 'py-60'
-        } w-full h-full bg-no-repeat bg-cover !flex justify-center items-center`}
-      >
-        <h3
-          className={` ${width > 800 ? 'text-3xl' : 'text-1xl'}  text-white `}
-        >
-          IT'S TIME TO GO DIGITAL
-        </h3>
+      <div className="w-1/2 text-center md:py-20">
+        <Image
+          preview={false}
+          src={carousel1.src}
+          width={'75%'}
+          className="-mt-60"
+          alt="carousel-img"
+        />
       </div>
-    </Carousel>
+    </div>
   )
 }
 
