@@ -1,16 +1,12 @@
 import React from 'react'
 import { Carousel, Image } from 'antd'
 import carousel1 from '../assets/images/saly-10.png'
-import { ArrowRightOutlined, SendOutlined } from '@ant-design/icons'
+import { ArrowRightOutlined } from '@ant-design/icons'
 const CarouselComp: React.FC = () => {
   return (
     <div className="flex justify-around bg-black items-center flex-column w-full h-screen">
       <div className="w-1/2">
-        <Carousel
-        dotPosition='top'
-          dots={true}
-          autoplay
-        >
+        <Carousel dotPosition="top" dots={true} autoplay>
           <div className="py-8">
             <h3 className="xs:text-xl md:text-3xl lg:text-5xl text-custom-color-h font-bold">
               WELCOME TO GRAPHYL
@@ -47,7 +43,7 @@ const CarouselComp: React.FC = () => {
               BOOK YOUR SLOT <ArrowRightOutlined />
             </button>
           </div>
-         </Carousel>
+        </Carousel>
       </div>
       <div className="w-1/2 text-center md:py-20">
         <Image

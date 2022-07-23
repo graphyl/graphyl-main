@@ -3,10 +3,11 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Script from 'next/script'
 import { ContactForm, Faq } from '../components'
+import { ContactProps } from '../interface/interface'
 
 const { TabPane } = Tabs
-// @ts-ignore
-const Contact: NextPage = ({ FaqRequired = true }) => {
+
+const Contact: NextPage<ContactProps> = ({ FaqRequired = true }) => {
   return (
     <div className="my-10 mw-container px-4 xl:px-0">
       <Head>

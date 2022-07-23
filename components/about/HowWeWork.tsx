@@ -1,7 +1,6 @@
 // import Image from 'next/image'
-import { Layout, Image } from 'antd'
+import { Image } from 'antd'
 import { aboutInfo } from '../../utils/data'
-const { Content, Sider } = Layout
 function HowWeWork() {
   return (
     <div className="mw-container px-4 py-10 xl:px-0 xl:py-20 !text-center space-y-10">

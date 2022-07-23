@@ -1,6 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Services, CarouselComp, About, TechStack, ContactForm } from '../components'
+import {
+  Services,
+  CarouselComp,
+  TechStack,
+} from '../components'
 import HowWeWork from '../components/about/HowWeWork'
 import Contact from './contact'
 
@@ -20,8 +24,7 @@ const Home: NextPage = () => {
           <HowWeWork />
 
           <TechStack isHome={true} />
-           {/* @ts-ignore */}
-          <Contact FaqRequired={false}/>
+          <Contact FaqRequired={false} />
         </div>
       </article>
     </>
