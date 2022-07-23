@@ -7,7 +7,7 @@ import notFoundImage from '../components/assets/images/404.png'
 import useWindowSize from '../hooks/use-window-dimensions'
 
 const Notfound = () => {
-  const { width, height } = useWindowSize()
+  const { width } = useWindowSize()
 
   return (
     <>
@@ -20,7 +20,7 @@ const Notfound = () => {
       <div className={width > 1200 ? 'p-32' : 'p-8'}>
         <Row>
           <Col xs={24} md={12}>
-            <Image src={notFoundImage} width={400} height={450} />
+            <Image src={notFoundImage} width={400} height={450} alt='404'/>
           </Col>
           <Col xs={24} md={12}>
             <div className="h-[100%] flex items-center space-y">

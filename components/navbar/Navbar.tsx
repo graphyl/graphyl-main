@@ -1,6 +1,5 @@
 import { Button, PageHeader } from 'antd'
 import Link from 'next/link'
-import React, { useState } from 'react'
 import { checkMenuClicked } from '../../utils/helpers'
 import { NavbarProps } from './interface'
 
