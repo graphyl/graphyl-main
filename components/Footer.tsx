@@ -3,13 +3,13 @@ import {
   LinkedinOutlined,
   MailOutlined,
 } from '@ant-design/icons'
-import { Col, Row, Typography } from 'antd'
+import { Col, Row } from 'antd'
 import Link from 'next/link'
 import useWindowSize from '../hooks/use-window-dimensions'
 import NavigationBtn from './button/NavigationBtn'
 
 const Footer = () => {
-  const { width, height } = useWindowSize()
+  const { width } = useWindowSize()
 
   return (
     <>
