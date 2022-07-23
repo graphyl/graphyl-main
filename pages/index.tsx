@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       </Head>
       <CarouselComp />
       <article>
-        <div className="container mx-auto space-y-20">
+        <div className="mw-container px-4 xl:px-0 space-y-20">
           {/* <About /> */}
           <Services />
           <HowWeWork />

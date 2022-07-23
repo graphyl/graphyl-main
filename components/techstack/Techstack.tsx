@@ -7,20 +7,20 @@ const Techstack: React.FC<TechstackProps> = ({ isHome = false }) => {
   console.log(isHome)
 
   return (
-    <>
+    <div className="mw-container px-4 xl:px-0">
       <div className="!text-center mb-10">
         <h2 className="inline-block text-2xl relative title-effect">
           Technologies we use
         </h2>
       </div>
       <div className={`"stack space-y-20 mt-20"`}>
-        <Row>
+        <Row gutter={[24, 0]}>
           <Col xs={24} md={12} className="flex flex-col items-center">
             <p className={`title ${isHome && 'title-home'}`} title="Frontend">
               Frontend
             </p>
             <List
-              grid={{ gutter: 14, xs: 6, md: 11 }}
+              grid={{ gutter: 14, xs: 9, md: 6 }}
               dataSource={frontend}
               renderItem={(item) => (
                 <List.Item className="transition-all hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
@@ -36,7 +36,7 @@ const Techstack: React.FC<TechstackProps> = ({ isHome = false }) => {
               Backend
             </p>
             <List
-              grid={{ gutter: 12, xs: 6, md: 11 }}
+              grid={{ gutter: 12, xs: 9, md: 6 }}
               dataSource={backend}
               renderItem={(item) => (
                 <List.Item className="transition-all hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
@@ -55,7 +55,7 @@ const Techstack: React.FC<TechstackProps> = ({ isHome = false }) => {
               App
             </p>
             <List
-              grid={{ gutter: 12, xs: 6, md: 11 }}
+              grid={{ gutter: 12, xs: 6, md: 6 }}
               dataSource={app}
               renderItem={(item) => (
                 <List.Item className="transition-all hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
@@ -71,7 +71,7 @@ const Techstack: React.FC<TechstackProps> = ({ isHome = false }) => {
               Tools
             </p>
             <List
-              grid={{ gutter: 12, xs: 6, md: 11 }}
+              grid={{ gutter: 12, xs: 6, md: 6 }}
               dataSource={tools}
               renderItem={(item) => (
                 <List.Item className="transition-all hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
@@ -84,7 +84,7 @@ const Techstack: React.FC<TechstackProps> = ({ isHome = false }) => {
           </Col>
         </Row>
       </div>
-    </>
+    </div>
   )
 }
 

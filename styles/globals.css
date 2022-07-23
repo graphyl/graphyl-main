@@ -13,6 +13,13 @@
   --ff-body: 'Poppins', sans-serif;
   --ff-heading: 'Roboto', sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   max-width: 100%;
@@ -57,6 +64,10 @@ a {
   color: inherit;
 }
 
+header {
+  background-color: var(--black);
+}
+
 .graphyl-text {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
@@ -64,8 +75,7 @@ a {
 }
 
 .ant-page-header {
-  background-color: var(--black);
-  padding: 16px 100px;
+  padding: 16px;
 }
 
 .ant-btn-link.active {
@@ -194,6 +204,26 @@ a {
 .title:after {
   color: var(--gray);
   white-space: nowrap;
+}
+
+/* Container */
+
+.mw-container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.mw-container-extended {
+  max-width: 1500px;
+}
+
+.live-url-button {
+  font-size: 20px; 
+  display: flex;
+  gap: .2rem;
+  padding: 5px 30px !important;
+  background-color: #1b1a17;
+  color: #fff;
 }
 
 @media screen and (min-width: 1280px) {

@@ -19,7 +19,7 @@ const ProjectCard: React.FC<Project> = (props) => {
           </h3>
           <div className="hidden xl:inline-block card__tags">
             {props.techStack.map((stack) => (
-              <Tag color="#1b1a17">{stack}</Tag>
+              <Tag style={{ padding: '5px 10px' , borderRadius: '100vw' }} color="#1b1a17">{stack}</Tag>
             ))}
           </div>
           <a
@@ -32,16 +32,16 @@ const ProjectCard: React.FC<Project> = (props) => {
             <EyeFilled />
           </a>
 
-          <Button
-            type="primary"
-            shape="round"
+          <a
+            type="button"
             target="_blank"
-            className="mt-5 hidden xl:flex items-center"
+            className="live-url-button mt-5 hidden xl:flex items-center rounded-xl"
             href={props?.liveUrl}
-            icon={<LinkOutlined />}
+            // icon={<LinkOutlined />}
           >
+            <LinkOutlined />
             View
-          </Button>
+          </a>
         </div>
       </div>
     </div>
