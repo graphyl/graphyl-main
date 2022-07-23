@@ -4,8 +4,8 @@ import useWindowSize from '../hooks/use-window-dimensions'
 // components
 import { Navbar, NavbarSm, Footer } from './'
 
-const Layout = ({ children }: React.PropsWithChildren<{}>) => {
-  const { width, height } = useWindowSize()
+const Layout = ({ children }: React.PropsWithChildren<any>) => {
+  const { width } = useWindowSize()
 
   const [menuLink, setMenuLink] = useState<{ menu: string; active: boolean }>({
     menu: 'home',

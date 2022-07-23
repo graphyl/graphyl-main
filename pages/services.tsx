@@ -1,4 +1,3 @@
-import { Col, Row } from 'antd'
 import React from 'react'
 import { ServicesDetails, TechStack } from '../components'
 import { servicesData } from '../utils/data'
@@ -16,21 +15,22 @@ const services = () => {
   return (
     <div className="px-4 xl:px-0 py-10 xl:py-16">
       <div className="mw-container text-center">
-      <h1 className="inline-block relative title-effect">Our Services</h1>
-      <p className="text-gray mt-6">
-        Being a Tech Startup and having expertise and experience in almost all
-        development and testing areas, We at Graphyl Provide Scalable and Robust
-        solutions which can curb all your essential needs right from root to
-        making it big. Graphyl offers highly capable, efﬁcient, and proven
-        Development and Maintenance Services using your preferred technologies
-        and methodologies
-      </p>
+        <h1 className="inline-block relative title-effect">Our Services</h1>
+        <p className="text-gray mt-6">
+          Being a Tech Startup and having expertise and experience in almost all
+          development and testing areas, We at Graphyl Provide Scalable and
+          Robust solutions which can curb all your essential needs right from
+          root to making it big. Graphyl offers highly capable, efﬁcient, and
+          proven Development and Maintenance Services using your preferred
+          technologies and methodologies
+        </p>
       </div>
 
       <div className="py-10 xl:py-20">
         <div className="mw-container px-4 xl:px-0">
           {servicesData.map((service, idx) => (
             <ServicesDetails
+              key={idx}
               title={service.title}
               desc={service.desc}
               approaches={service.approaches}

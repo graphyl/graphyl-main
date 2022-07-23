@@ -1,6 +1,5 @@
 import React from 'react'
 import { Carousel, Image } from 'antd'
-import carousel1 from '../assets/images/saly-10.png'
 import { ArrowRightOutlined } from '@ant-design/icons'
 const CarouselComp: React.FC = () => {
   return (
@@ -53,7 +52,7 @@ const CarouselComp: React.FC = () => {
         <div className="lg:w-1/2 lg:py-20">
           <Image
             preview={false}
-            src={carousel1.src}
+            src="https://res.cloudinary.com/graphyl/image/upload/v1658568512/graphyl-website-assets/services/Saly-10_vjfvhh.png"
             className="lg:-mt-60 md:w-[50%] lg:w-[75%] mx-auto"
             alt="carousel-img"
           />

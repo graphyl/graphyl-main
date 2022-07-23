@@ -1,11 +1,10 @@
 import { Col, List, Row, Tooltip } from 'antd'
+import Image from 'next/image'
 import React from 'react'
 import { TechstackProps } from '../../interface/interface'
 import { frontend, backend, tools, app } from '../../utils/data'
 
 const Techstack: React.FC<TechstackProps> = ({ isHome = false }) => {
-  console.log(isHome)
-
   return (
     <div className="mw-container px-4 xl:px-0">
       <div className="!text-center mb-10">
@@ -25,7 +24,7 @@ const Techstack: React.FC<TechstackProps> = ({ isHome = false }) => {
               renderItem={(item) => (
                 <List.Item className="transition-all hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
                   <Tooltip title={item.title} placement="bottom">
-                    <img src={item.url} alt={item.title} width="40" />
+                    <Image src={item.url} alt={item.title} width="40" />
                   </Tooltip>
                 </List.Item>
               )}
@@ -41,7 +40,7 @@ const Techstack: React.FC<TechstackProps> = ({ isHome = false }) => {
               renderItem={(item) => (
                 <List.Item className="transition-all hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
                   <Tooltip title={item.title} placement="bottom">
-                    <img src={item.url} alt={item.title} width="40" />
+                    <Image src={item.url} alt={item.title} width="40" />
                   </Tooltip>
                 </List.Item>
               )}
@@ -60,7 +59,7 @@ const Techstack: React.FC<TechstackProps> = ({ isHome = false }) => {
               renderItem={(item) => (
                 <List.Item className="transition-all hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
                   <Tooltip title={item.title} placement="bottom">
-                    <img src={item.url} alt={item.title} width="40" />
+                    <Image src={item.url} alt={item.title} width="40" />
                   </Tooltip>
                 </List.Item>
               )}
@@ -76,7 +75,7 @@ const Techstack: React.FC<TechstackProps> = ({ isHome = false }) => {
               renderItem={(item) => (
                 <List.Item className="transition-all hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
                   <Tooltip title={item.title} placement="bottom">
-                    <img src={item.url} alt={item.title} width="40" />
+                    <Image src={item.url} alt={item.title} width="40" />
                   </Tooltip>
                 </List.Item>
               )}

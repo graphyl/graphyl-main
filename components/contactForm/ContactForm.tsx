@@ -2,11 +2,10 @@ import { useForm } from '@formspree/react'
 import { Form, message, Row, Col, Input, Button } from 'antd'
 import TextArea from 'antd/lib/input/TextArea'
 import React, { useState } from 'react'
-import useWindowSize from '../../hooks/use-window-dimensions'
 
 const ContactForm = () => {
-  const { width, height } = useWindowSize()
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [state, handleSubmit] = useForm('mqknnozo')
   const [contactForm] = Form.useForm()
 
@@ -31,6 +30,7 @@ const ContactForm = () => {
         }
       })
       .catch((err) => {
+        console.log(err)
         message.error('Something went wrong!')
         setLoading(false)
       })
