@@ -8,7 +8,7 @@ const Navbar: React.FC<NavbarProps> = ({ menuLink, setMenuLink }) => {
   return (
     <>
       <PageHeader
-        className="site-page-header"
+        className="site-page-header mw-container !px-4 xl:!px-0"
         title={
           <div className="cursor-pointer">
             <Link href="/">

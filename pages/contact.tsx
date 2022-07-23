@@ -8,14 +8,14 @@ const { TabPane } = Tabs
 // @ts-ignore
 const Contact: NextPage = ({ FaqRequired = true }) => {
   return (
-    <div className="my-10">
+    <div className="my-10 mw-container px-4 xl:px-0">
       <Head>
         <title>Graphyl | Contact</title>
         <meta name="description" content="Graphy | For dreamers by creators." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="container mx-auto">
+      <div>
         <Row>
           <Col xs={24} className="text-center space-y-4">
             <h1 className="inline-block	text-4xl mb-4 relative title-effect text-gray">

@@ -3,49 +3,42 @@ import React from 'react'
 import { ServicesDetails, TechStack } from '../components'
 import { servicesData } from '../utils/data'
 
-import webDevImg from '../components/assets/images/web-dev.svg'
-import appDevImg from '../components/assets/images/app-dev.svg'
-import desktopDevImg from '../components/assets/images/desktop-dev.svg'
-import designImg from '../components/assets/images/design.svg'
-import maintenanceImg from '../components/assets/images/maintenance.svg'
-import testingImg from '../components/assets/images/testing.svg'
-
 const services = () => {
   const images = [
-    webDevImg,
-    appDevImg,
-    desktopDevImg,
-    designImg,
-    maintenanceImg,
-    testingImg,
+    'https://res.cloudinary.com/graphyl/image/upload/v1654417835/graphyl-website-assets/services/web-dev_gnmcyu.png',
+    'https://res.cloudinary.com/graphyl/image/upload/v1654417820/graphyl-website-assets/services/mobile-app_n73jqp.png',
+    'https://res.cloudinary.com/graphyl/image/upload/v1654417821/graphyl-website-assets/services/desktop_bw2mso.png',
+    'https://res.cloudinary.com/graphyl/image/upload/v1654417838/graphyl-website-assets/services/ui-ux_blgvti.png',
+    'https://res.cloudinary.com/graphyl/image/upload/v1654417839/graphyl-website-assets/services/maintenance_retimg.png',
+    'https://res.cloudinary.com/graphyl/image/upload/v1654417837/graphyl-website-assets/services/testing_atvjb3.png',
   ]
 
   return (
-    <div className="px-8 lg:px-32 space-y-20 my-10">
-      <Row justify="center">
-        <Col xs={24} md={12} className="text-center space-y-6">
-          <h1 className="inline-block relative title-effect">Our Services</h1>
-          <p className="text-gray">
-            Being a Tech Startup and having expertise and experience in almost
-            all development and testing areas, We at Graphyl Provide Scalable
-            and Robust solutions which can curb all your essential needs right
-            from root to making it big. Graphyl offers highly capable, efﬁcient,
-            and proven Development and Maintenance Services using your preferred
-            technologies and methodologies
-          </p>
-        </Col>
-      </Row>
+    <div className="px-4 xl:px-0 py-10 xl:py-16">
+      <div className="mw-container text-center">
+      <h1 className="inline-block relative title-effect">Our Services</h1>
+      <p className="text-gray mt-6">
+        Being a Tech Startup and having expertise and experience in almost all
+        development and testing areas, We at Graphyl Provide Scalable and Robust
+        solutions which can curb all your essential needs right from root to
+        making it big. Graphyl offers highly capable, efﬁcient, and proven
+        Development and Maintenance Services using your preferred technologies
+        and methodologies
+      </p>
+      </div>
 
-      <div className="space-y-40">
-        {servicesData.map((service, idx) => (
-          <ServicesDetails
-            title={service.title}
-            desc={service.desc}
-            approaches={service.approaches}
-            image={images[service.image - 1]}
-            idx={idx}
-          />
-        ))}
+      <div className="py-10 xl:py-20">
+        <div className="mw-container px-4 xl:px-0">
+          {servicesData.map((service, idx) => (
+            <ServicesDetails
+              title={service.title}
+              desc={service.desc}
+              approaches={service.approaches}
+              image={images[service.image - 1]}
+              idx={idx}
+            />
+          ))}
+        </div>
       </div>
 
       <div>
