@@ -2,7 +2,55 @@ import { NextPage } from 'next'
 import React from 'react'
 import { Row, Col } from 'antd'
 import { ProjectCard } from '../components'
-import { Projects } from '../utils/data'
+import { Project } from '../interface/interface'
+
+const Projects: Project[] = [
+  {
+    name: 'Bookmark Landing Page',
+    imgUrl:
+      'https://res.cloudinary.com/graphyl/image/upload/v1654685259/graphyl-website-assets/projects/BookMark_Landing_Page_fosubr.png',
+    liveUrl: 'https://ubed90.github.io/bookmark-landing-page',
+    techStack: ['Angular', 'SCSS'],
+  },
+  {
+    name: 'Natours',
+    imgUrl:
+      'https://res.cloudinary.com/graphyl/image/upload/v1654685261/graphyl-website-assets/projects/Natours_h8qzyh.png',
+    liveUrl: 'https://ubed90.github.io/Natours',
+    techStack: ['Angular', 'Scss'],
+  },
+
+  {
+    name: 'Herbal Medicine Shop',
+    imgUrl:
+      'https://res.cloudinary.com/graphyl/image/upload/v1655644276/graphyl-website-assets/projects/Herbal_Medicine_fn0ref.png',
+    techStack: ['React', 'NodeJS', 'Express', 'MongoDB', 'RazorPay'],
+  },
+
+  {
+    name: 'KhoobSurat',
+    imgUrl:
+      'https://res.cloudinary.com/graphyl/image/upload/v1654685960/graphyl-website-assets/projects/Khoobsurat_nath0t.png',
+    liveUrl: 'https://www.khooobsooorat.com/',
+    techStack: ['React', 'PHP'],
+  },
+
+  {
+    name: 'Nizami Darbar',
+    imgUrl:
+      'https://res.cloudinary.com/graphyl/image/upload/v1654686379/graphyl-website-assets/projects/Nizami_Darbar_e4c0mv.png',
+    liveUrl: 'https://alnizamidarbar.com/',
+    techStack: ['HTML', 'CSS', 'JavaScript'],
+  },
+
+  {
+    name: 'clipz',
+    imgUrl:
+      'https://res.cloudinary.com/graphyl/image/upload/v1655643800/graphyl-website-assets/projects/clips_laniuk.png',
+    liveUrl: 'https://clipz-five.vercel.app/',
+    techStack: ['Angular', 'SCSS', 'FireBase'],
+  },
+]
 
 const Portfolio: NextPage = () => {
   return (
@@ -25,7 +73,14 @@ const Portfolio: NextPage = () => {
         justify="center"
       >
         {Projects.map((project, idx) => (
-          <Col xs={24} sm={24} md={12} lg={8} className="flex justify-center" key={idx}>
+          <Col
+            xs={24}
+            sm={24}
+            md={12}
+            lg={8}
+            className="flex justify-center"
+            key={idx}
+          >
             <div className="h-80 xl:h-72 w-full rounded-xl overflow-hidden cursor-pointer relative main-card">
               <ProjectCard {...project} />
             </div>
