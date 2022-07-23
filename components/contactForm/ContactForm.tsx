@@ -40,7 +40,7 @@ const ContactForm = () => {
     <>
       <div className="space-y-16">
         <Row gutter={32} align="middle" justify="center">
-          <Col xs={24} md={12} className="w-max">
+          <Col xs={24} md={14} className="w-max">
             <Form
               form={contactForm}
               name="contactForm"

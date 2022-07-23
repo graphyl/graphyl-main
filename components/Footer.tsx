@@ -13,12 +13,13 @@ const Footer = () => {
 
   return (
     <>
-      <div className="px-14 bg-black text-white py-20">
+      <div className="bg-black text-white py-20 px-10 xl:px-0">
         <Row
-          justify="end"
-          className={width > 1200 ? 'space-x-20' : 'space-x-0 space-y-14'}
+          justify="center"
+          // gutter={[16,16]}
+          className={`${width > 1200 ? 'space-x-20' : 'space-x-0 space-y-14'} mw-container`}
         >
-          <Col xs={24} lg={6}>
+          <Col xs={24} xl={6}>
             <div className="space-y-6">
               <h1 className="text-3xl graphyl-text text-white">Graphyl</h1>
               <p className='text-base'>
@@ -29,7 +30,7 @@ const Footer = () => {
               </p>
             </div>
           </Col>
-          <Col xs={24} lg={6}>
+          <Col xs={24} md={12} xl={6}>
             <div className="space-y-4">
               <h1 className="text-white text-xl">Contact</h1>
               <p className="mb-0 text-base">Mumbai, India</p>
@@ -55,7 +56,7 @@ const Footer = () => {
               </div>
             </div>
           </Col>
-          <Col xs={24} lg={6}>
+          <Col xs={24} md={12} xl={6}>
             <div>
               <h1 className="text-white text-xl">Links</h1>
               <ul className="list-none space-y-1">
