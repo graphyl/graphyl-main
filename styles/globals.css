@@ -260,6 +260,11 @@ header {
   max-width: 1500px;
 }
 
+/* .carousel-grid {
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+} */
+
 .live-url-button {
   font-size: 20px; 
   display: flex;
@@ -277,6 +282,10 @@ header {
 }
 
 @media screen and (max-width: 600px) {
+.carousel-button-animation {
+  width: max-content;
+  font-size: 0.7rem;
+}
   .title {
     font-size: 1.4rem;
   }
