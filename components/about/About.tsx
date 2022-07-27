@@ -20,7 +20,7 @@ const About: React.FC = () => {
         <p className="my-5 max-w-2xl mx-auto">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio impedit
           dolore perspiciatis reiciendis, dignissimos maxime tenetur quo ut a
-          modi eum nisi necessitatibus neque?
+          modi eum nisi necessitatibus neque? Lorem10
         </p>
       </div>
 
@@ -43,6 +43,8 @@ const About: React.FC = () => {
                     className="h-80 object-cover md:h-full !w-full"
                     preview={false}
                     alt="laique"
+                    width="100%"
+                    height="100%"
                   />
                 }
                 actions={[
@@ -71,7 +73,7 @@ const About: React.FC = () => {
                 <h2 className="text-xl">Laique Mirza</h2>
                 <p className="!text-sm !text-slate-500 !font-thin">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-                  ipsum dolor sit amet consectetur adipisicing elit.
+                  ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, voluptas.
                 </p>
               </Card>
             </Col>
@@ -84,6 +86,8 @@ const About: React.FC = () => {
                     className="h-80 object-cover md:h-full !w-full"
                     preview={false}
                     alt="ubed"
+                    width="100%"
+                    height="100%"
                   />
                 }
                 actions={[
@@ -110,8 +114,9 @@ const About: React.FC = () => {
               >
                 <h2 className="text-xl">Ubed Shaikh</h2>
                 <p className="!text-sm !text-slate-500 !font-thin">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-                  ipsum dolor sit amet consectetur adipisicing elit.
+                  Hi 🤙. I am Ubed Shaikh. I am a Full Stack Developer and UI /
+                  UX Designer having more than 2 years of Industry experience in
+                  developing scalable and robust applications.
                 </p>
               </Card>
             </Col>
@@ -124,6 +129,8 @@ const About: React.FC = () => {
                     className="h-80 object-cover md:h-full !w-full"
                     preview={false}
                     alt="saad"
+                    width="100%"
+                    height="100%"
                   />
                 }
                 actions={[

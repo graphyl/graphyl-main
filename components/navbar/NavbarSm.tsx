@@ -22,14 +22,14 @@ const NavbarSm: React.FC<NavbarProps> = ({ menuLink, setMenuLink }) => {
         <nav className="flex justify-between items-center px-6 py-3">
           <div className="logo">
             <Link href="/">
-              <h1 className={`text-2xl graphyl-text cursor-pointer mb-0`}>
+              <h1 className={`text-2xl graphyl-text cursor-pointer mb-0 text-white`}>
                 Graphyl
               </h1>
             </Link>
           </div>
           <div>
             <Button
-              icon={<MenuOutlined className="text-center" />}
+              icon={<MenuOutlined className="text-center text-white text-xl" />}
               type="text"
               onClick={showDrawer}
             >

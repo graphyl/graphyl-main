@@ -11,7 +11,7 @@ const ProjectCard: React.FC<Project> = (props) => {
   return (
     <div className={styles.card}>
       <div className="card__img absolute inset-0 bottom-14 xl:bottom-0">
-        <Image className="w-full h-full" src={props.imgUrl} alt={props.name} />
+        <Image className="w-full h-full" src={props.imgUrl} alt={props.name} width="100%" height="100%" layout='fill' />
       </div>
       <div className={`${styles.card__data} absolute inset-0`}>
         <div className="w-full h-full flex items-center justify-between px-2 xl:flex-col xl:justify-center xl:text-center xl:text-4xl">
@@ -43,7 +43,7 @@ const ProjectCard: React.FC<Project> = (props) => {
           <a
             type="button"
             target="_blank"
-            className="live-url-button mt-5 hidden xl:flex items-center rounded-xl"
+            className={`${width < 1280 ? '!hidden' : ''} live-url-button mt-5 xl:flex items-center rounded-xl`}
             href={props?.liveUrl}
             rel="noreferrer"
           >
