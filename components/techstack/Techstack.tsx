@@ -77,10 +77,6 @@ const Techstack: React.FC<TechstackProps> = ({ isHome = false }) => {
       url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg',
     },
     {
-      title: 'Strapi',
-      url: 'https://images.opencollective.com/strapi/3ec3247/logo/256.png',
-    },
-    {
       title: 'Mongo DB',
       url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
     },
