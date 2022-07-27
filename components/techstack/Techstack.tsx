@@ -167,7 +167,7 @@ const Techstack: React.FC<TechstackProps> = ({ isHome = false }) => {
               renderItem={(item) => (
                 <List.Item className="transition-all hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
                   <Tooltip title={item.title} placement="bottom">
-                    <Image src={item.url} alt={item.title} width="40" />
+                    <Image src={item.url} alt={item.title} />
                   </Tooltip>
                 </List.Item>
               )}
@@ -183,7 +183,7 @@ const Techstack: React.FC<TechstackProps> = ({ isHome = false }) => {
               renderItem={(item) => (
                 <List.Item className="transition-all hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
                   <Tooltip title={item.title} placement="bottom">
-                    <Image src={item.url} alt={item.title} width="40" />
+                    <Image src={item.url} alt={item.title} />
                   </Tooltip>
                 </List.Item>
               )}
@@ -202,7 +202,7 @@ const Techstack: React.FC<TechstackProps> = ({ isHome = false }) => {
               renderItem={(item) => (
                 <List.Item className="transition-all hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
                   <Tooltip title={item.title} placement="bottom">
-                    <Image src={item.url} alt={item.title} width="40" />
+                    <Image src={item.url} alt={item.title} />
                   </Tooltip>
                 </List.Item>
               )}
@@ -218,7 +218,7 @@ const Techstack: React.FC<TechstackProps> = ({ isHome = false }) => {
               renderItem={(item) => (
                 <List.Item className="transition-all hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
                   <Tooltip title={item.title} placement="bottom">
-                    <Image src={item.url} alt={item.title} width="40" />
+                    <Image src={item.url} alt={item.title} />
                   </Tooltip>
                 </List.Item>
               )}
