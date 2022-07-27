@@ -147,6 +147,7 @@ const Techstack: React.FC<TechstackProps> = ({ isHome = false }) => {
       url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
     },
   ]
+
   return (
     <div className="mw-container px-4 xl:px-0">
       <div className="!text-center mb-10">
@@ -161,7 +162,7 @@ const Techstack: React.FC<TechstackProps> = ({ isHome = false }) => {
               Frontend
             </p>
             <List
-              grid={{ gutter: 14, xs: 9, md: 6 }}
+              // grid={{ gutter: 14, xs: 9, md: 6 }}
               dataSource={frontend}
               renderItem={(item) => (
                 <List.Item className="transition-all hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
@@ -177,7 +178,7 @@ const Techstack: React.FC<TechstackProps> = ({ isHome = false }) => {
               Backend
             </p>
             <List
-              grid={{ gutter: 12, xs: 9, md: 6 }}
+              // grid={{ gutter: 12, xs: 9, md: 6 }}
               dataSource={backend}
               renderItem={(item) => (
                 <List.Item className="transition-all hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
@@ -196,7 +197,7 @@ const Techstack: React.FC<TechstackProps> = ({ isHome = false }) => {
               App
             </p>
             <List
-              grid={{ gutter: 12, xs: 6, md: 6 }}
+              // grid={{ gutter: 12, xs: 6, md: 6 }}
               dataSource={app}
               renderItem={(item) => (
                 <List.Item className="transition-all hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
@@ -212,7 +213,7 @@ const Techstack: React.FC<TechstackProps> = ({ isHome = false }) => {
               Tools
             </p>
             <List
-              grid={{ gutter: 12, xs: 6, md: 6 }}
+              // grid={{ gutter: 12, xs: 6, md: 6 }}
               dataSource={tools}
               renderItem={(item) => (
                 <List.Item className="transition-all hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
