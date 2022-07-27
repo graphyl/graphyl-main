@@ -25,6 +25,7 @@ const Portfolio: NextPage = () => {
       name: 'Herbal Medicine Shop',
       imgUrl:
         'https://res.cloudinary.com/graphyl/image/upload/v1655644276/graphyl-website-assets/projects/Herbal_Medicine_fn0ref.png',
+      liveUrl: 'https://amruttam.store/#/',
       techStack: ['React', 'NodeJS', 'Express', 'MongoDB', 'RazorPay'],
     },
 

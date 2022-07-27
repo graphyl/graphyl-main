@@ -47,7 +47,7 @@ const Services = () => {
               hoverable
               cover={
                 <div className="p-8 flex justify-center">
-                  <Image alt={data.title} src={data.icon} />
+                  <Image alt={data.title} src={data.icon} width="100%" height="100%" />
                 </div>
               }
             >
