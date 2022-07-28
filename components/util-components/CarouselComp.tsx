@@ -1,6 +1,7 @@
 import React from 'react'
 import { Carousel, Image } from 'antd'
 import { ArrowRightOutlined } from '@ant-design/icons'
+import Link from 'next/link'
 
 // const contentStyle: React.CSSProperties = {
 //   height: '160px',
@@ -20,37 +21,40 @@ const CarouselComp: React.FC = () => {
               <h3 className="text-2xl lg:text-5xl text-custom-color-h font-bold">
                 WELCOME TO GRAPHYL
               </h3>
-              <p className="text-xs md:text-sm text-custom-color-p md:w-3/4 leading-4">
-                For dreamers by creators For dreamers by creators For dreamers
-                by For dreamers by creators For dreamers by creators creators
+              <p className="text-lg lg:text-2xl uppercase letter lg:tracking-widest text-custom-color-p leading-4">
+                For dreamers by creators
               </p>
-              <button className="carousel-button-animation flex items-center gap-x-3">
-                BOOK YOUR SLOT <ArrowRightOutlined />
-              </button>
+              <Link href="/contact">
+                <button className="carousel-button-animation flex items-center gap-x-3">
+                  BOOK YOUR SLOT <ArrowRightOutlined />
+                </button>
+              </Link>
             </div>
             <div className="pt-8 !flex flex-col gap-y-4 overflow-hidden">
               <h3 className="text-2xl lg:text-5xl text-custom-color-h font-bold">
-                WELCOME TO GRAPHYL
+                TRANSFORM YOUR BUSINESS
               </h3>
-              <p className="text-xs md:text-sm text-custom-color-p md:w-3/4 leading-4">
-                For dreamers by creators For dreamers by creators For dreamers
-                by For dreamers by creators For dreamers by creators creators
+              <p className="text-lg lg:text-2xl uppercase lg:tracking-wide text-custom-color-p leading-4">
+                We Provide Full Fledged IT Solutions
               </p>
-              <button className="carousel-button-animation flex items-center gap-x-3">
-                BOOK YOUR SLOT <ArrowRightOutlined />
-              </button>
+              <Link href="/contact">
+                <button className="carousel-button-animation flex items-center gap-x-3">
+                  BOOK YOUR SLOT <ArrowRightOutlined />
+                </button>
+              </Link>
             </div>
             <div className="pt-8 !flex flex-col gap-y-4 overflow-hidden">
-              <h3 className="text-2xl lg:text-5xl text-custom-color-h font-bold">
-                WELCOME TO GRAPHYL
+              <h3 className="text-2xl lg:text-5xl uppercase lg:tracking-wider text-custom-color-h font-bold">
+                Get Digitized
               </h3>
-              <p className="text-xs md:text-sm text-custom-color-p md:w-3/4 leading-4">
-                For dreamers by creators For dreamers by creators For dreamers
-                by For dreamers by creators For dreamers by creators creators
+              <p className="text-lg lg:text-2xl uppercase lg:tracking-wide text-custom-color-p leading-4">
+                We Build Robust and Scalabe Apps
               </p>
-              <button className="carousel-button-animation flex items-center gap-x-3">
-                BOOK YOUR SLOT <ArrowRightOutlined />
-              </button>
+              <Link href="/contact">
+                <button className="carousel-button-animation flex items-center gap-x-3">
+                  BOOK YOUR SLOT <ArrowRightOutlined />
+                </button>
+              </Link>
             </div>
           </Carousel>
         </div>

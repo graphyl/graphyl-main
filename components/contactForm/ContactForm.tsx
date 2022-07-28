@@ -40,14 +40,14 @@ const ContactForm = () => {
     <>
       <div className="space-y-16">
         <Row gutter={32} align="middle" justify="center">
-          <Col xs={24} md={14} className="w-max">
+          <Col xs={24} md={16} xl={14} className="w-max">
             <Form
               form={contactForm}
               name="contactForm"
               layout="vertical"
               onFinish={submitContactForm}
             >
-              <Row className="px-10" align="middle">
+              <Row className="md:px-10" align="middle">
                 <Col xs={24}>
                   <Form.Item
                     label={<span className="text-biscuit">Name</span>}

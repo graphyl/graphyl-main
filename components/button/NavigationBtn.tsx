@@ -23,7 +23,7 @@ const NavigationBtn: React.FC<NavigationBtnProps> = ({
   return (
     <>
       {typeof tootlip === 'string' ? (
-        <Link href={link} passHref={true} target="_blank">
+        <Link href={link} target="_blank">
           <Tooltip placement={tooltipPlacement} title={tootlip}>
             <Button
               type={btnType}
@@ -35,7 +35,7 @@ const NavigationBtn: React.FC<NavigationBtnProps> = ({
           </Tooltip>
         </Link>
       ) : (
-        <Link href={link} passHref={true} target="_blank">
+        <Link href={link} target="_blank">
           <Button
             type={btnType}
             className="text-white hover:!text-accent hover:!border-accent"

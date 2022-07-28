@@ -3,6 +3,7 @@ import React from 'react'
 import { Row, Col } from 'antd'
 import { ProjectCard } from '../components'
 import { Project } from '../interface/interface'
+import Head from 'next/head'
 
 const Portfolio: NextPage = () => {
   const Projects: Project[] = [
@@ -54,6 +55,13 @@ const Portfolio: NextPage = () => {
     },
   ]
   return (
+
+    <>
+    <Head>
+        <title>Graphyl | Portfolio</title>
+        <meta name="description" content="Graphy | For dreamers by creators." />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
     <div className="mw-container px-4 xl:px-0 py-10 xl:py-20">
       <Row className="mb-10">
         <Col xs={24} className="text-center">
@@ -88,6 +96,7 @@ const Portfolio: NextPage = () => {
         ))}
       </Row>
     </div>
+    </>
   )
 }
 

@@ -145,7 +145,7 @@ header {
 }
 
 .title-effect {
-  font-size: 2rem !important;
+  font-size: 2rem;
   color: var(--gray);
 }
 
@@ -269,6 +269,17 @@ header {
   padding: 5px 30px !important;
   background-color: #1b1a17;
   color: #fff;
+}
+
+.services-list {
+  display: flex;
+  align-items: center;
+}
+
+.services-list::before {
+  content: '\27A4';
+  margin-right: 5px;
+  font-size: 1.3rem;
 }
 
 @media screen and (min-width: 1280px) {

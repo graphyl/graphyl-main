@@ -18,4 +18,5 @@ export interface TechstackProps {
 }
 export interface ContactProps {
   FaqRequired?: boolean
+  showHead?: boolean
 }

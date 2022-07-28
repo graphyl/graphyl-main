@@ -10,28 +10,43 @@ const About: React.FC = () => {
     <div className="about-team">
       <div className="mw-container px-4 xl:px-0 text-center py-10">
         <h2
-          className={`${
-            width > 800 ? 'text-3xl' : 'text-1xl'
-          } inline-block text-3xl relative title-effect`}
+          className={`inline-block relative !text-black title-effect ${
+            width > 800 ? '!text-5xl' : '!text-1xl'
+          }`}
         >
           About
         </h2>
 
-        <p className="my-5 max-w-2xl mx-auto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio impedit
-          dolore perspiciatis reiciendis, dignissimos maxime tenetur quo ut a
-          modi eum nisi necessitatibus neque? Lorem10
+        <p className="my-5 mx-auto">
+          Graphyl is a Team of Under-rated but Enthusiastic developers aiming to
+          provide optimal solutions to their clients. We work together to
+          design, create and produce work that we are proud of for folks that we
+          believe in. Graphylis an all-in-one IT Solutions Platform for small
+          business. We empower small Scale Businesses and Startups around the
+          world to start and grow their businesses with our smart development
+          technologies, scalable Support, and inspiring content.
         </p>
       </div>
 
-      <div className="py-8 xl:py-20 !w-[100%] bg-black">
+      <div className="py-8 xl:py-10 !w-[100%]">
         <h2
           className={`${
             width > 800 ? 'text-3xl' : 'text-1xl'
-          } inline-block text-3xl relative title-effect !text-white mb-4`}
+          } inline-block text-3xl relative title-effect !text-black mb-4`}
         >
           Our Team
         </h2>
+
+        <p className="my-5 mx-auto max-w-3xl">
+          Graphyl is a Team of Enthusiastic developers aiming to
+          provide optimal solutions to their clients. We work together to
+          design, create and produce work that we are proud of for folks that we
+          believe in. Graphylis an all-in-one IT Solutions Platform for small
+          business. We empower small Scale Businesses and Startups around the
+          world to start and grow their businesses with our smart development
+          technologies, scalable Support, and inspiring content.
+        </p>
+
         <div className="mw-container px-4 xl:px-0">
           <Row gutter={[32, 32]} justify="center" align="middle">
             <Col xs={24} md={8}>
@@ -72,8 +87,10 @@ const About: React.FC = () => {
               >
                 <h2 className="text-xl">Laique Mirza</h2>
                 <p className="!text-sm !text-slate-500 !font-thin">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-                  ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, voluptas.
+                  Enthusiastic Software Developer eager to contribute to team
+                  success through hard work, attention to detail and excellent
+                  organizational skills. Clear understanding of software task
+                  and responsibility.
                 </p>
               </Card>
             </Col>

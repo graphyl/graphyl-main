@@ -30,7 +30,7 @@ const ServicesDetails: React.FC<ServicesDetailsInterface> = ({
               <p className={idx % 2 != 0 ? '' : 'mr-4'}>{desc}</p>
               <ul className="mt-6 space-y-2">
                 {approaches.map((x, idx) => (
-                  <li key={idx}>{x}</li>
+                  <li className="services-list" key={idx}>{x}</li>
                 ))}
               </ul>
             </Col>
@@ -67,7 +67,7 @@ const ServicesDetails: React.FC<ServicesDetailsInterface> = ({
               <p>{desc}</p>
               <ul className="mt-6 space-y-2">
                 {approaches.map((x, idx) => (
-                  <li key={idx}>{x}</li>
+                  <li className="services-list" key={idx}>{x}</li>
                 ))}
               </ul>
             </Col>

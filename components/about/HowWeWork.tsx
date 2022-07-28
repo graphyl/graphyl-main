@@ -18,7 +18,7 @@ function HowWeWork() {
         src="https://res.cloudinary.com/graphyl/image/upload/v1658562468/graphyl-website-assets/services/Agile_ee7qz9.png"
         preview={false}
         alt="work"
-        className="w-[70%] mx-auto"
+      className="lg:w-[70%] mx-auto"
       />
     </div>
   )

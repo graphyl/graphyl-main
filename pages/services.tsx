@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import React from 'react'
 import { ServicesDetails, TechStack } from '../components'
 import { servicesData } from '../utils/data'
@@ -13,6 +14,12 @@ const services = () => {
   ]
 
   return (
+    <>
+    <Head>
+        <title>Graphyl | Services</title>
+        <meta name="description" content="Graphy | For dreamers by creators." />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
     <div className="px-4 xl:px-0 py-10 xl:py-16">
       <div className="mw-container text-center">
         <h1 className="inline-block relative title-effect">Our Services</h1>
@@ -45,6 +52,7 @@ const services = () => {
         <TechStack />
       </div>
     </div>
+    </>
   )
 }
 

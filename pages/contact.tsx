@@ -7,14 +7,22 @@ import { ContactProps } from '../interface/interface'
 
 const { TabPane } = Tabs
 
-const Contact: NextPage<ContactProps> = ({ FaqRequired = true }) => {
+const Contact: NextPage<ContactProps> = ({
+  FaqRequired = true,
+  showHead = true,
+}) => {
   return (
     <div className="my-10 mw-container px-4 xl:px-0">
-      <Head>
-        <title>Graphyl | Contact</title>
-        <meta name="description" content="Graphy | For dreamers by creators." />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      {showHead && (
+        <Head>
+          <title>Graphyl | Contact</title>
+          <meta
+            name="description"
+            content="Graphy | For dreamers by creators."
+          />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+      )}
 
       <div>
         <Row>
@@ -30,11 +38,18 @@ const Contact: NextPage<ContactProps> = ({ FaqRequired = true }) => {
         </Row>
 
         <Tabs defaultActiveKey="1" centered animated={true} className="mt-16">
-          <TabPane tab={<p className="uppercase">Contact Via Email</p>} key="1">
+          <TabPane
+            tab={
+              <p className="uppercase text-sm md:text-lg">Contact Via Email</p>
+            }
+            key="1"
+          >
             <ContactForm />
           </TabPane>
           <TabPane
-            tab={<p className="uppercase">Schedule a meeting</p>}
+            tab={
+              <p className="uppercase text-sm md:text-lg">Schedule a meeting</p>
+            }
             key="2"
             active
           >

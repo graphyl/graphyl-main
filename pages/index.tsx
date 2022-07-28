@@ -24,7 +24,7 @@ const Home: NextPage = () => {
           <HowWeWork />
 
           <TechStack isHome={true} />
-          <Contact FaqRequired={false} />
+          <Contact showHead={false} FaqRequired={false} />
         </div>
       </article>
     </>
