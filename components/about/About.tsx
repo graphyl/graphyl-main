@@ -38,13 +38,13 @@ const About: React.FC = () => {
         </h2>
 
         <p className="my-5 mx-auto max-w-3xl">
-          Graphyl is a Team of Enthusiastic developers aiming to
-          provide optimal solutions to their clients. We work together to
-          design, create and produce work that we are proud of for folks that we
-          believe in. Graphylis an all-in-one IT Solutions Platform for small
-          business. We empower small Scale Businesses and Startups around the
-          world to start and grow their businesses with our smart development
-          technologies, scalable Support, and inspiring content.
+          Graphyl is a Team of Enthusiastic developers aiming to provide optimal
+          solutions to their clients. We work together to design, create and
+          produce work that we are proud of for folks that we believe in.
+          Graphylis an all-in-one IT Solutions Platform for small business. We
+          empower small Scale Businesses and Startups around the world to start
+          and grow their businesses with our smart development technologies,
+          scalable Support, and inspiring content.
         </p>
 
         <div className="mw-container px-4 xl:px-0">
@@ -87,10 +87,8 @@ const About: React.FC = () => {
               >
                 <h2 className="text-xl">Laique Mirza</h2>
                 <p className="!text-sm !text-slate-500 !font-thin">
-                  Enthusiastic Software Developer eager to contribute to team
-                  success through hard work, attention to detail and excellent
-                  organizational skills. Clear understanding of software task
-                  and responsibility.
+                  Hi I'm Laique, I'm a Software engineer at HDFC Ergo. I have
+                  more than 2.5 years of industry experience in building fast and reliable software applications .
                 </p>
               </Card>
             </Col>
