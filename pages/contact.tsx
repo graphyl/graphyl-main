@@ -17,9 +17,9 @@ const Contact: NextPage<ContactProps> = ({
         <Head>
           <title>Graphyl | Contact</title>
           <meta
-            name="description"
-            content="Graphy | For dreamers by creators."
-          />
+          name="description"
+          content="We are a software development and consultancy service. We help small to medium scale businesses to build their online presence. Come work with us | For dreamers by creators."
+        />
           <link rel="icon" href="/favicon.ico" />
         </Head>
       )}
