@@ -30,7 +30,7 @@ const Navbar: React.FC<NavbarProps> = ({ menuLink, setMenuLink }) => {
                 : 'in-active'
             }`}
             onClick={() => {
-              checkMenuClicked('home', setMenuLink)
+              checkMenuClicked('lg', 'home', setMenuLink, () => false)
             }}
           >
             <Link href="/">Home</Link>
@@ -44,7 +44,7 @@ const Navbar: React.FC<NavbarProps> = ({ menuLink, setMenuLink }) => {
                 : 'in-active'
             }`}
             onClick={() => {
-              checkMenuClicked('about', setMenuLink)
+              checkMenuClicked('lg', 'about', setMenuLink, () => false)
             }}
           >
             <Link href="/about">About</Link>
@@ -58,7 +58,7 @@ const Navbar: React.FC<NavbarProps> = ({ menuLink, setMenuLink }) => {
                 : 'in-active'
             }`}
             onClick={() => {
-              checkMenuClicked('services', setMenuLink)
+              checkMenuClicked('lg', 'services', setMenuLink, () => false)
             }}
           >
             <Link href="/services">Services</Link>
@@ -72,7 +72,7 @@ const Navbar: React.FC<NavbarProps> = ({ menuLink, setMenuLink }) => {
                 : 'in-active'
             }`}
             onClick={() => {
-              checkMenuClicked('portfolio', setMenuLink)
+              checkMenuClicked('lg', 'portfolio', setMenuLink, () => false)
             }}
           >
             <Link href="/portfolio">Portfolio</Link>
@@ -86,7 +86,7 @@ const Navbar: React.FC<NavbarProps> = ({ menuLink, setMenuLink }) => {
                 : 'in-active'
             }`}
             onClick={() => {
-              checkMenuClicked('contact', setMenuLink)
+              checkMenuClicked('lg', 'contact', setMenuLink, () => false)
             }}
           >
             <Link href="/contact">Contact</Link>

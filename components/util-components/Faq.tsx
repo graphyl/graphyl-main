@@ -1,12 +1,7 @@
-import {
-  LinkedinOutlined,
-  MailOutlined,
-  PhoneOutlined,
-} from '@ant-design/icons'
 import { Col, Collapse, Row } from 'antd'
 import React from 'react'
 import { accordionData } from '../../utils/data'
-import NavigationBtn from '../button/NavigationBtn'
+import Socials from '../socials/Socials'
 
 const Faq: React.FC = () => {
   const { Panel } = Collapse
@@ -19,27 +14,11 @@ const Faq: React.FC = () => {
           </h1>
           <p className="text-2xl text-gray">Frequently Asked Questions</p>
           <p className="text-gray">Wanna know more? come connect with us.</p>
-          <div className="space-x-4 mt-4">
-            <NavigationBtn
-              tootlip="LinkedIn"
-              link="https://stackoverflow.com/"
-              icon={<LinkedinOutlined className="!text-2xl !text-gray" />}
-            />
-            <NavigationBtn
-              tootlip="Email"
-              link="mailto:graphylsolutions@gmail.com"
-              icon={<MailOutlined className="!text-2xl !text-gray" />}
-            />
-            <NavigationBtn
-              tootlip="Phone"
-              link="tel:9876543211"
-              icon={<PhoneOutlined className="!text-2xl !text-gray" />}
-            />
-          </div>
+          <Socials color="gray" />
         </div>
       </Col>
 
-      <Col xs={24} md={12} className='border-l-accent border-l-2'>
+      <Col xs={24} md={12} className="border-l-accent border-l-2">
         <Collapse className="bg-white" bordered={false} accordion>
           {accordionData.map((data, index) => (
             <Panel
@@ -47,7 +26,9 @@ const Faq: React.FC = () => {
               key={index}
               style={{ paddingBlock: 5 }}
             >
-              <div className="!px-10 text-white !text-justify">{data.answer}</div>
+              <div className="!px-10 text-white !text-justify">
+                {data.answer}
+              </div>
             </Panel>
           ))}
         </Collapse>

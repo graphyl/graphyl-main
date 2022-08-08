@@ -1,8 +1,8 @@
 export interface Project {
   name: string
   imgUrl: string
-  techStack: string[];
-  liveUrl?: string;
+  techStack: string[]
+  liveUrl?: string
 }
 
 export interface ServicesDetailsInterface {
@@ -19,4 +19,8 @@ export interface TechstackProps {
 export interface ContactProps {
   FaqRequired?: boolean
   showHead?: boolean
+}
+
+export interface SocialsProps {
+  color: string
 }

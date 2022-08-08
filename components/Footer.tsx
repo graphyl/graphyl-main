@@ -1,12 +1,8 @@
-import {
-  CaretRightOutlined,
-  LinkedinOutlined,
-  MailOutlined,
-} from '@ant-design/icons'
+import { CaretRightOutlined } from '@ant-design/icons'
 import { Col, Row } from 'antd'
 import Link from 'next/link'
 import useWindowSize from '../hooks/use-window-dimensions'
-import NavigationBtn from './button/NavigationBtn'
+import Socials from './socials/Socials'
 
 const Footer = () => {
   const { width } = useWindowSize()
@@ -17,12 +13,14 @@ const Footer = () => {
         <Row
           justify="center"
           // gutter={[16,16]}
-          className={`${width > 1200 ? 'space-x-20' : 'space-x-0 space-y-14'} mw-container`}
+          className={`${
+            width > 1200 ? 'space-x-20' : 'space-x-0 space-y-14'
+          } mw-container`}
         >
           <Col xs={24} xl={6}>
             <div className="space-y-6">
               <h1 className="text-3xl graphyl-text text-white">Graphyl</h1>
-              <p className='text-base'>
+              <p className="text-base">
                 Graphyl strives to create a culture that empowers a humble,
                 creative, and independent workforce. We are passionate about our
                 customers and believe that collaboration and creativity are
@@ -41,19 +39,7 @@ const Footer = () => {
                 </p>
               </div>
 
-              <h1 className="text-white text-xl pt-3">Connect with us</h1>
-              <div className="space-x-4 mt-4">
-                <NavigationBtn
-                  tootlip="LinkedIn"
-                  link="https://www.linkedin.com/company/86632763"
-                  icon={<LinkedinOutlined className="!text-2xl !text-white" />}
-                />
-                <NavigationBtn
-                  tootlip="Email"
-                  link="mailto:info@graphyl.com"
-                  icon={<MailOutlined className="!text-2xl !text-white" />}
-                />
-              </div>
+              <Socials color="white" />
             </div>
           </Col>
           <Col xs={24} md={12} xl={6}>
