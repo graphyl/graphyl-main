@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Services, CarouselComp, TechStack } from '../components'
 import HowWeWork from '../components/about/HowWeWork'
+import Reviews from '../components/reviews/Reviews'
 import Contact from './contact'
 
 const Home: NextPage = () => {
@@ -21,7 +22,7 @@ const Home: NextPage = () => {
           {/* <About /> */}
           <Services />
           <HowWeWork />
-
+          <Reviews />
           <TechStack isHome={true} />
           <Contact showHead={false} FaqRequired={false} />
         </div>

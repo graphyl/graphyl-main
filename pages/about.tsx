@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import React from 'react'
 import { About, HowWeWork } from '../components'
+import Brands from '../components/brands/Brands'
+import Reviews from '../components/reviews/Reviews'
 
 const about = () => {
   return (
@@ -13,10 +15,14 @@ const about = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <div className="text-center">
-      <About />
-      <HowWeWork />
-    </div>
+      <div className="text-center">
+        <About />
+        <HowWeWork />
+        <Brands />
+        <div className="mw-container mt-20">
+          <Reviews />
+        </div>
+      </div>
     </>
   )
 }
