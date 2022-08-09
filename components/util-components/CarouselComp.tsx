@@ -3,20 +3,12 @@ import { Carousel, Image } from 'antd'
 import { ArrowRightOutlined } from '@ant-design/icons'
 import Link from 'next/link'
 
-// const contentStyle: React.CSSProperties = {
-//   height: '160px',
-//   color: '#fff',
-//   lineHeight: '160px',
-//   textAlign: 'center',
-//   background: '#364d79',
-// }
-
 const CarouselComp: React.FC = () => {
   return (
     <div className="bg-black desktop-carousel lg:flex lg:items-center">
       <div className="mw-container px-4 pb-16 xl:px-0 md:py-20 lg:py-32 xl:py-0 md:grid md:grid-cols-2 xl:gap-x-10 items-center">
         <div className="left pt-4 pb-8">
-          <Carousel dots={true} dotPosition="top" >
+          <Carousel dots={true} dotPosition="top" autoplay>
             <div className="pt-8 !flex flex-col gap-y-4 overflow-hidden">
               <h3 className="text-2xl lg:text-5xl text-custom-color-h font-bold">
                 WELCOME TO GRAPHYL
