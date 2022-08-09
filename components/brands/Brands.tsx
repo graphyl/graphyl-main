@@ -9,7 +9,7 @@ const Brands = () => {
     <div className="bg-black py-8">
       <Row align="middle" className="mw-container">
         <Col xs={24} md={8} className="mb-10 md:mb-0">
-          <h1 className="text-3xl lg:text-4xl text-white">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl text-white">
             Brands we have worked with.
           </h1>
         </Col>

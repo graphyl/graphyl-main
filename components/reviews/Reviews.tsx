@@ -30,7 +30,7 @@ const Reviews = () => {
     },
     {
       name: 'Nilesh Rai',
-      desc: 'Best of luck LAKSN team...It wz a great experience working with you guyz...Your on time delivery of projects is what matters a lot in todays busy schedule....Also the way you guyz work on each projects is appreciable....keep it up....and wish you good luck for future....',
+      desc: 'Best of luck Graphyl team...It wz a great experience working with you guyz...Your on time delivery of projects is what matters a lot in todays busy schedule....Also the way you guyz work on each projects is appreciable....keep it up....and wish you good luck for future....',
       stars: 5,
     },
   ]
