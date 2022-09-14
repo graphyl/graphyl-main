@@ -30,21 +30,21 @@ const Portfolio: NextPage = () => {
       techStack: ['React', 'NodeJS', 'Express', 'MongoDB', 'RazorPay'],
     },
 
-    {
-      name: 'KhoobSurat',
-      imgUrl:
-        'https://res.cloudinary.com/graphyl/image/upload/v1654685960/graphyl-website-assets/projects/Khoobsurat_nath0t.png',
-      liveUrl: 'https://www.khooobsooorat.com/',
-      techStack: ['React', 'PHP'],
-    },
+    // {
+    //   name: 'KhoobSurat',
+    //   imgUrl:
+    //     'https://res.cloudinary.com/graphyl/image/upload/v1654685960/graphyl-website-assets/projects/Khoobsurat_nath0t.png',
+    //   liveUrl: 'https://www.khooobsooorat.com/',
+    //   techStack: ['React', 'PHP'],
+    // },
 
-    {
-      name: 'Nizami Darbar',
-      imgUrl:
-        'https://res.cloudinary.com/graphyl/image/upload/v1654686379/graphyl-website-assets/projects/Nizami_Darbar_e4c0mv.png',
-      liveUrl: 'https://alnizamidarbar.com/',
-      techStack: ['HTML', 'CSS', 'JavaScript'],
-    },
+    // {
+    //   name: 'Nizami Darbar',
+    //   imgUrl:
+    //     'https://res.cloudinary.com/graphyl/image/upload/v1654686379/graphyl-website-assets/projects/Nizami_Darbar_e4c0mv.png',
+    //   liveUrl: 'https://alnizamidarbar.com/',
+    //   techStack: ['HTML', 'CSS', 'JavaScript'],
+    // },
 
     {
       name: 'clipz',
