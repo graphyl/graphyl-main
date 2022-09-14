@@ -17,7 +17,7 @@ const Portfolio: NextPage = () => {
     {
       name: 'Natours',
       imgUrl:
-        'https://res.cloudinary.com/graphyl/image/upload/v1663138289/graphyl-website-assets/projects/amruttam-store_g4mruy.png',
+        'https://res.cloudinary.com/graphyl/image/upload/v1654685261/graphyl-website-assets/projects/Natours_h8qzyh.png',
       liveUrl: 'https://ubed90.github.io/Natours',
       techStack: ['Angular', 'Scss'],
     },
@@ -25,7 +25,7 @@ const Portfolio: NextPage = () => {
     {
       name: 'Herbal Medicine Shop',
       imgUrl:
-        'https://res.cloudinary.com/graphyl/image/upload/v1655644276/graphyl-website-assets/projects/Herbal_Medicine_fn0ref.png',
+        'https://res.cloudinary.com/graphyl/image/upload/v1663138289/graphyl-website-assets/projects/amruttam-store_g4mruy.png',
       liveUrl: 'https://amruttam.store/#/',
       techStack: ['React', 'NodeJS', 'Express', 'MongoDB', 'RazorPay'],
     },
