@@ -17,7 +17,7 @@ const Portfolio: NextPage = () => {
     {
       name: 'Natours',
       imgUrl:
-        'https://res.cloudinary.com/graphyl/image/upload/v1654685261/graphyl-website-assets/projects/Natours_h8qzyh.png',
+        'https://res.cloudinary.com/graphyl/image/upload/v1663138289/graphyl-website-assets/projects/amruttam-store_g4mruy.png',
       liveUrl: 'https://ubed90.github.io/Natours',
       techStack: ['Angular', 'Scss'],
     },
