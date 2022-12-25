@@ -54,49 +54,6 @@ const About: React.FC = () => {
                 hoverable
                 cover={
                   <Image
-                    src="https://res.cloudinary.com/graphyl/image/upload/v1655193649/graphyl-website-assets/Team/laique-img_sftutb.jpg"
-                    className="h-80 object-cover md:h-full !w-full"
-                    preview={false}
-                    alt="laique"
-                    width="100%"
-                    height="100%"
-                  />
-                }
-                actions={[
-                  <Tooltip key="view" title="Visit Linkedin" placement="bottom">
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://www.laique007.com/"
-                    >
-                      <LinkedinOutlined className="text-xl" />
-                    </a>
-                  </Tooltip>,
-                  <Tooltip key="view" title="Visit Website" placement="bottom">
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://www.laique007.com/"
-                    >
-                      <LinkOutlined className="text-xl" />
-                    </a>
-                  </Tooltip>,
-                ]}
-                // style={{ width: 250 }}
-                className="mt-4"
-              >
-                <h2 className="text-xl">Laique Mirza</h2>
-                <p className="!text-sm !text-slate-500 !font-thin">
-                  Hi I'm Laique, I'm a Software engineer at HDFC Ergo. I have
-                  more than 2.5 years of industry experience in building fast and reliable software applications .
-                </p>
-              </Card>
-            </Col>
-            <Col xs={24} md={8}>
-              <Card
-                hoverable
-                cover={
-                  <Image
                     src="https://res.cloudinary.com/graphyl/image/upload/v1658556271/graphyl-website-assets/Team/ubed_aqjmdl.jpg"
                     className="h-80 object-cover md:h-full !w-full"
                     preview={false}
@@ -128,6 +85,7 @@ const About: React.FC = () => {
                 className="mt-4"
               >
                 <h2 className="text-xl">Ubed Shaikh</h2>
+                <h4 className="mb-3 text-gray">Software Engineer</h4>
                 <p className="!text-sm !text-slate-500 !font-thin">
                   Hi 🤙. I am Ubed Shaikh. I am a Full Stack Developer and UI /
                   UX Designer having more than 2 years of Industry experience in
@@ -140,8 +98,8 @@ const About: React.FC = () => {
                 hoverable
                 cover={
                   <Image
-                    src="https://res.cloudinary.com/graphyl/image/upload/v1658562373/graphyl-website-assets/Team/saad-img_g2qy6o.jpg"
-                    className="h-80 object-cover md:h-full !w-full"
+                    src="https://res.cloudinary.com/graphyl/image/upload/v1671951667/graphyl-website-assets/Team/saad_1_shxl03.png"
+                    className=" object-cover md:h-[500px] !w-full"
                     preview={false}
                     alt="saad"
                     width="100%"
@@ -171,10 +129,48 @@ const About: React.FC = () => {
                 className="mt-4"
               >
                 <h2 className="text-xl">Saad Shaikh</h2>
+                <h4 className="mb-3 text-gray">Software Engineer</h4>
                 <p className="!text-sm !text-slate-500 !font-thin">
                   Hello there, Im saad shaikh. A Fullstack Developer with three
                   years of industrial experience. Wanna know more about me?
                   Visit either of those links below.
+                </p>
+              </Card>
+            </Col>
+            <Col xs={24} md={8}>
+              <Card
+                hoverable
+                cover={
+                  <Image
+                    src="https://res.cloudinary.com/graphyl/image/upload/v1671951747/graphyl-website-assets/Team/ayaz_chaoudary-1_ebhjtr.png"
+                    className="h-80 object-cover !w-full"
+                    preview={false}
+                    alt="laique"
+                    width="100%"
+                    height="100%"
+                  />
+                }
+                actions={[
+                  <Tooltip key="view" title="Visit Linkedin" placement="bottom">
+                    <a target="_blank" rel="noreferrer" href="#!">
+                      <LinkedinOutlined className="text-xl" />
+                    </a>
+                  </Tooltip>,
+                  <Tooltip key="view" title="Visit Website" placement="bottom">
+                    <a target="_blank" rel="noreferrer" href="#!">
+                      <LinkOutlined className="text-xl" />
+                    </a>
+                  </Tooltip>,
+                ]}
+                // style={{ width: 250 }}
+                className="mt-4"
+              >
+                <h2 className="text-xl">Ayaz Choudhary</h2>
+                <h4 className="mb-3 text-gray">Business Consultant</h4>
+                <p className="!text-sm !text-slate-500 !font-thin">
+                  A talented and effective communicator with energetic approach
+                  towards work, committed to the development and growth of
+                  people, reports and profits.
                 </p>
               </Card>
             </Col>

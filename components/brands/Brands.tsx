@@ -21,7 +21,7 @@ const Brands = () => {
             autoplay
           >
             <SwiperSlide>
-              <img src="/kbsrt.png" alt="brand-logo" width={100} />
+              <img src="/kbsrt.png" alt="brand-logo" width={70} />
             </SwiperSlide>
             <SwiperSlide>
               <img src="/amrtm.png" alt="brand-logo" width={100} />
@@ -31,7 +31,7 @@ const Brands = () => {
                 src="/ntrs.png"
                 alt="brand-logo"
                 width={100}
-                className="bg-gray p-4"
+                className=" pt-4"
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -39,10 +39,9 @@ const Brands = () => {
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="/bmrk.svg"
+                src="/gcd.png"
                 alt="brand-logo"
-                width={100}
-                className="bg-white p-4 rounded"
+                width={250}
               />
             </SwiperSlide>
           </Swiper>

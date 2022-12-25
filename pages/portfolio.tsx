@@ -8,11 +8,11 @@ import Head from 'next/head'
 const Portfolio: NextPage = () => {
   const Projects: Project[] = [
     {
-      name: 'Bookmark Landing Page',
+      name: 'Genconnect Digital',
       imgUrl:
-        'https://res.cloudinary.com/graphyl/image/upload/v1654685259/graphyl-website-assets/projects/BookMark_Landing_Page_fosubr.png',
-      liveUrl: 'https://ubed90.github.io/bookmark-landing-page',
-      techStack: ['Angular', 'SCSS'],
+        'https://res.cloudinary.com/graphyl/image/upload/v1671947362/graphyl-website-assets/projects/gcd_sri9p2.png',
+      liveUrl: 'http://genconnectdigital.com/',
+      techStack: ['Typescript', 'React', 'Node js', 'MySql', 'Strapi'],
     },
     {
       name: 'Natours',
@@ -23,21 +23,20 @@ const Portfolio: NextPage = () => {
     },
 
     {
-      name: 'Herbal Medicine Shop',
+      name: 'Amruttam Store',
       imgUrl:
         'https://res.cloudinary.com/graphyl/image/upload/v1663138289/graphyl-website-assets/projects/amruttam-store_g4mruy.png',
       liveUrl: 'https://amruttam.store/#/',
       techStack: ['React', 'NodeJS', 'Express', 'MongoDB', 'RazorPay'],
     },
 
-    // {
-    //   name: 'KhoobSurat',
-    //   imgUrl:
-    //     'https://res.cloudinary.com/graphyl/image/upload/v1654685960/graphyl-website-assets/projects/Khoobsurat_nath0t.png',
-    //   liveUrl: 'https://www.khooobsooorat.com/',
-    //   techStack: ['React', 'PHP'],
-    // },
-
+    {
+      name: 'Khooobsooorat',
+      imgUrl:
+        'https://res.cloudinary.com/graphyl/image/upload/v1654685960/graphyl-website-assets/projects/Khoobsurat_nath0t.png',
+      liveUrl: 'https://www.khooobsooorat.com/',
+      techStack: ['React', 'PHP'],
+    },
     // {
     //   name: 'Nizami Darbar',
     //   imgUrl:
@@ -45,7 +44,6 @@ const Portfolio: NextPage = () => {
     //   liveUrl: 'https://alnizamidarbar.com/',
     //   techStack: ['HTML', 'CSS', 'JavaScript'],
     // },
-
     {
       name: 'clipz',
       imgUrl:

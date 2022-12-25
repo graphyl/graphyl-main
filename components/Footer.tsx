@@ -34,8 +34,9 @@ const Footer = () => {
               <p className="mb-0 text-base">Mumbai, India</p>
               <div>
                 <p className="!text-white text-base">
-                  <a href="mailto:info@graphyl.com">info@graphyl.com</a> |{' '}
-                  <a href="tel:9967005204">+91 9967005204</a>
+                  <a className='block' href="tel:+919967005204">India: +91 9967005204</a> 
+                  <a className='block' href="tel:+14692475633">United States: +1 469 247 5633</a>
+                  <a className='block' href="mailto:info@graphyl.com">info@graphyl.com</a>
                 </p>
               </div>
 
